@@ -1,0 +1,57 @@
+// /* element.scss */
+
+body {
+    background: $clr-root;
+    font-size: 15px;
+    color: $clr-base;
+    font-family: 'Roboto', sans-serif;
+    font-weight: $font-light;
+    // cursor: none;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+p {
+    line-height: 36px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    color: $clr-base;
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+// @media (max-height: 500px) and (orientation: landscape) {
+//     [lang='en'] body::before {
+//         content: 'Your screen height is too low to properly displays the site. Please rotate your device ';
+//     }
+
+//     body::before {
+//         position: fixed;
+//         z-index: 200;
+//         top: 0;
+//         left: 0;
+//         width: 100vw;
+//         height: 100vh;
+//         padding: 30vh 50px;
+//         background: #000;
+//         color: #fff;
+//         font-size: 40px;
+//         font-weight: 100;
+//         line-height: 20vh;
+//     }
+// }

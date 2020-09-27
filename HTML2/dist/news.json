@@ -1,0 +1,17 @@
+{  "news":[  {
+        "id": "News1",
+        "title":"News Title",
+        "shortDis":"News  Short Discription",
+        "longDis":"News Long Discription",
+        "imgSrc":"../img/"
+    },
+
+    {
+        "id": "News2",
+        "title":"News Title 2",
+        "shortDis":"News  Short Discription",
+        "longDis":"News Long Discription",
+        "imgSrc":"../img/"
+    }
+]
+}

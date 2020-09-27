@@ -1,0 +1,14 @@
+        @media only screen and (max-width: 1200px) {
+            .related-links {
+                margin-bottom: 30px;
+            }
+            #fourth .full-sec-body {
+                padding: 3% 3%
+            }
+            .full-sec-body h2 {
+                font-size: 35px;
+            }
+            .full-sec-body p {
+                font-size: 18px;
+            }
+        }

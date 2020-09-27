@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon.ico">
+    <title></title>
+    <style>
+    #se-pre-con {
+        display: block;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 999999;
+        background: url(./../images/carLoader.gif) center no-repeat #fff;
+        background-color: rgba(0, 0, 0, 0.8);
+        -webkit-transition: all 0.5s ease-out;
+        -moz-transition: all 0.5s ease-out;
+        -o-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+    }
+
+    #se-pre-con span {
+        z-index: 9999999;
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        border: 6px solid #f3f3f3;
+        /* Light grey */
+        border-top: 6px solid #3498db;
+        /* Blue */
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        margin-left: -25px;
+        margin-right: -25px;
+        animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .hideLoader {
+        -webkit-transition: all 1s linear ease-out-in;
+        -moz-transition: all 1s linear ease-out-in;
+        -o-transition: all 1s linear ease-out-in;
+        transition: all 1s linear ease-out-in;
+        top: -100% !important;
+        opacity: 0;
+        display: none;
+    }
+    </style>
+    <script>
+    window.document.onload = function(e) {
+        console.log("document.onload");
+    }
+    window.onload = function(e) {
+        var loader = document.getElementById('se-pre-con');
+        loader.className += "hideLoader";
+    }
+    </script>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Page CSS -->
+    <link href="css/app_ish.min.css" rel="stylesheet">
+    <!--<script src="js/modernizr.min.js"></script>-->
+    <script src="js/modernizr.min.js"></script>
+</head>
+
+<body id="first">
+    <div id="se-pre-con"><span></span></div>
+    <!-- navigation include in external file -->
+    <div id="inc-navigation">
+    </div>
+    <!-- Docs page layout -->
+    <div class="">
+        <div id="homeslider" class="slider-pro ish-slider">
+            <div class="sp-slides">
+                <div class="sp-slide">
+                    <img class="sp-image" src="css/images/spinner-35x35.gif" data-src="images/homepage-slider.jpg" data-retina="images/homepage-slider.jpg" />
+                    <p class="sp-layer sp-black sp-padding hide-small-screen" data-position="centerCenter" data-vertical="50" data-show-transition="left" data-show-delay="700" data-hide-transition="right" data-hide-delay="200">Hospitality education. Reimagined.
+                    </p>
+                </div>
+                <div class="sp-slide">
+                    <img class="sp-image" src="css/images/spinner-35x35.gif" data-src="images/homepage-slider2.jpg" data-retina="images/homepage-slider2.jpg" />
+                    <p class="sp-layer sp-black sp-padding hide-small-screen" data-position="centerCenter" data-vertical="50" data-show-transition="top" data-show-delay="700" data-hide-transition="bottom" data-hide-delay="200">Hospitality education. Reimagined.
+                    </p>
+                </div>
+                <div class="sp-slide">
+                    <img class="sp-image" src="css/images/spinner-35x35.gif" data-src="images/homepage-slider3.jpg" data-retina="images/homepage-slider3.jpg" />
+                    <p class="sp-layer sp-black sp-padding hide-small-screen" data-position="centerCenter" data-vertical="50" data-show-transition="top" data-show-delay="700" data-hide-transition="bottom" data-hide-delay="200">Hospitality education. Reimagined.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container for-mob">
+        <div class="row ">
+            <div class="col-md-12">
+                <h4 class="page-section-heading">Hospitality education. Reimagined.</h4>
+                <p class="para-body">The essence of hospitality isn’t something that can be distilled to fit within the pages of a textbook- it’s an entire world that is waiting to be explored and experienced. Our curriculum, a collaboration with the top ranked hotel management school worldwide, Ecole hoteliere de Lausanne, is tailor-made to help you discover both the art and science of hospitality, and equip you with a skillset that embraces the excitement and challenges of change.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row sec-1" id="mgs-1">
+            <div class="col-md-4 col-sm-4">
+                <div class="related-links home ">
+                    <div class="thumb-img">
+                        <img src="images/img1.jpg" class="img-responsive" />
+                    </div>
+                    <div class="details">
+                        <h4>LET's GET ACQUAINTED</h4>
+                        <p>At ISH, we’re doing things a little differently. Find out more about our unique approach to education and why you’ll love studying with us.</p>
+                        <a href="#" class="readmore-btn">READ MORE</a> </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="related-links home">
+                    <div class="thumb-img">
+                        <img src="images/img2.jpg" class="img-responsive" />
+                    </div>
+                    <div class="details right">
+                        <h4>OUR PROGRAMMES</h4>
+                        <p>We know it’s time for change- which is why we’ve taken a totally new approach to learning. Our programmes are here to make you, and your skill set, futureproof.</p>
+                        <a href="#" class="readmore-btn">READ MORE</a> </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="related-links home ">
+                    <div class="thumb-img">
+                        <img src="images/img3.jpg" class="img-responsive" />
+                    </div>
+                    <div class="details">
+                        <h4>WHY STUDY HOSPITALITY?</h4>
+                        <p>At ISH, we’re doing things a little differently. Find out more about our unique approach to education and why you’ll love studying with us.</p>
+                        <a href="#" class="readmore-btn">READ MORE</a> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+    .bcg {
+        background: no-repeat center center;
+        background-size: cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0.5;
+    }
+
+    #slide01 .bcg {
+        background: url(images/experience.jpg) no-repeat center center;
+        background-size: cover;
+    }
+
+    #slide02 .bcg {
+        background: url(images/sign-up.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    </style>
+    <div class="viewport-anim" id="second">
+        <div class="full-sec">
+            <div id="parallax1" class="parallaxParent full-sec-img">
+                <span class="trangel"></span>
+                <div class="" style="background-image: url(images/experience.jpg); background-size:cover; background-repeat: no-repeat;"></div>
+            </div>
+            <div class="full-sec-body">
+                <div class="">
+                    <h2>Experience hospitality education the way it was meant to be taught</h2>
+                    <p>We want our students to learn from the best. Which is why all of our faculty industry professionals who love what they do, and want to teach you everything they know.</p>
+                </div>
+                <div class="responsive-action"><a href="" class="readmore-btn">Find out more</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="container viewport-anim" id="third">
+        <div class="row sec-2">
+            <div class="col-md-4 col-sm-4">
+                <div class="related-links home">
+                    <div class="thumb-img">
+                        <img src="images/img4.jpg" class="img-responsive" />
+                    </div>
+                    <div class="details">
+                        <h4>YOUR FUTURE</h4>
+                        <p>At ISH, we’re doing things a little differently. Find out more about our unique approach to education and why you’ll love studying with us.</p>
+                        <a href="#" class="readmore-btn">READ MORE</a> </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="related-links home ">
+                    <div class="thumb-img">
+                        <img src="images/img5.jpg" class="img-responsive" />
+                    </div>
+                    <div class="details right">
+                        <h4>OUR FACILITIES</h4>
+                        <p>At ISH, we’re doing things a little differently. Find out more about our unique approach to education and why you’ll love studying with us.</p>
+                        <a href="#" class="readmore-btn">READ MORE</a> </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="related-links home">
+                    <div class="thumb-img">
+                        <img src="images/img6.jpg" class="img-responsive" />
+                    </div>
+                    <div class="details">
+                        <h4>STUDENT LIFE AT ISH</h4>
+                        <p>At ISH, we’re doing things a little differently. Find out more about our unique approach to education and why you’ll love studying with us.</p>
+                        <a href="#" class="readmore-btn">READ MORE</a> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="viewport-anim" id="fourth">
+        <div class="full-sec">
+            <div class="full-sec-body">
+                <div class="">
+                    <h2>Sign up for an open day and discover our campus for yourself</h2>
+                    <p>We’d love to get to know you better- sign up for an open day and tour our facilities, explore our campus, meet the faculty and see why ISH could be a good fit for your future.</p>
+                </div>
+                <div class="responsive-action"><a href="" class="readmore-btn">Find out more</a></div>
+            </div>
+            <div id="parallax2" class="parallaxParent full-sec-img">
+                <span class="trangel"></span>
+                <div class="" style="background-image: url(images/sign-up.jpg); background-size:cover; background-repeat: no-repeat;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container news-container viewport-anim" id="fifth">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 news-head">
+                <h4><a href="#">News and events</a></h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="owl-carousel">
+                    <div class="">
+                        <div class="news-thumb">
+                            <img class="img-responsive" src="images/news1.jpg" alt="">
+                            <a href="" class="news-thumb-detail">
+                                <p>Hospitality sector needs protection following Brexit, insists trade body</p>
+                                <div class="news-thumb-date">
+                                    May 25th
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="news-thumb">
+                            <img class="img-responsive" src="images/news2.jpg" alt="">
+                            <a href="" class="news-thumb-detail">
+                                <p>BHA launches hospitality industry documentary with ITN, BNA
+                                </p>
+                                <div class="news-thumb-date">
+                                    June 1st
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="news-thumb">
+                            <img class="img-responsive" src="images/news3.jpg" alt="">
+                            <a href="" class="news-thumb-detail">
+                                <p>Future of hospitality in the spotlight in new BHA and ITN news show</p>
+                                <div class="news-thumb-date">
+                                    June 5th
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="news-thumb">
+                            <img class="img-responsive" src="images/news1.jpg" alt="">
+                            <a href="" class="news-thumb-detail">
+                                <p>Hospitality sector needs protection following Brexit, insists trade body</p>
+                                <div class="news-thumb-date">
+                                    May 25th
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="news-thumb">
+                            <img class="img-responsive" src="images/news2.jpg" alt="">
+                            <a href="" class="news-thumb-detail">
+                                <p>BHA launches hospitality industry documentary with ITN, BNA
+                                </p>
+                                <div class="news-thumb-date">
+                                    June 1st
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="news-thumb">
+                            <img class="img-responsive" src="images/news3.jpg" alt="">
+                            <a href="" class="news-thumb-detail">
+                                <p>Future of hospitality in the spotlight in new BHA and ITN news show</p>
+                                <div class="news-thumb-date">
+                                    June 5th
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer include in external file -->
+    <footer class="footer viewport-anim" id="inc-footer">
+    </footer>
+    <!-- Sidebar -->
+    <div id="scroll">
+        <nav id="spy">
+            <ul class="sidebar-nav nav">
+                <li class="sidebar-brand page-scroll"><a href="#first"></a></li>
+                <li class="page-scroll"><a href="#second" data-scroll></a>
+                </li>
+                <li class="page-scroll"><a href="#third" data-scroll></a>
+                </li>
+                <li class="page-scroll"><a href="#fourth" data-scroll></a>
+                </li>
+                <li class="page-scroll"><a href="#fifth" data-scroll></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="">
+        <a href="#" class="scrollup hvr-bob "><i class="fa fa-angle-up animated bounce" aria-hidden="true"></i></a>
+    </div>
+    <!-- SCRIPTS -->
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <script src="js/app_ish.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+    <script>
+    /*Scroll Spy*/
+    $('body').scrollspy({ target: '#spy', offset: 80 });
+
+    /*Smooth link animation*/
+    $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+    $('.ish-dropdown').hover(function() {
+            $(this).addClass("active");
+        },
+        function() {
+            $(this).removeClass("active");
+        });
+
+    if ($(window).width() > 768) {
+        // init controller
+        var controller = new ScrollMagic.Controller({
+            globalSceneOptions: {
+                triggerHook: "onEnter",
+                duration: "200%"
+            }
+        });
+        // // build scenes
+        // new ScrollMagic.Scene({
+        //         triggerElement: "#parallax1"
+        //     })
+        //     .setTween("#parallax1 > div", {
+        //         y: "50%",
+        //         ease: Linear.easeNone
+        //     })
+        //     .addTo(controller);
+        // // build scenes
+        // new ScrollMagic.Scene({
+        //         triggerElement: "#parallax2"
+        //     })
+        //     .setTween("#parallax2 > div", {
+        //         y: "50%",
+        //         ease: Linear.easeNone
+        //     })
+        //     // .addIndicators()
+        //     .addTo(controller);
+
+        //Section animation
+        var tweenSec1 = TweenMax.staggerFromTo(".sec-1 .details", 0.5, { x: 80 }, { x: 0, ease: Linear.easeOut }, 0.15);
+        new ScrollMagic.Scene({
+                triggerElement: ".sec-1"
+            })
+            .setTween(tweenSec1)
+            .addTo(controller);
+
+        var third = TweenMax.staggerFromTo(".sec-2 .details", 0.5, { x: 80 }, { x: 0, ease: Linear.easeOut }, 0.15);
+        new ScrollMagic.Scene({
+                triggerElement: "#third"
+            })
+            .setTween(third)
+            .addTo(controller);
+
+        var tweenSec3 = TweenMax.staggerFromTo(".sec-3 .details", 0.5, { x: -80 }, { x: 0, ease: Linear.easeOut }, 0.15);
+        new ScrollMagic.Scene({
+                triggerElement: ".sec-3"
+            })
+            //.setTween(".sec-3", {opacity:0, y:100, delay:1,ease: Linear.easeNone})
+            .setTween(tweenSec3)
+            .addTo(controller);
+
+
+
+
+    } else {
+
+    }
+    $(function() {
+        $('#header_nav').data('size', 'big');
+    });
+
+    if ($(window).width() < 768) {
+
+    } else {}
+
+
+
+
+
+    $(function() {
+        // Check if browser supports Css animations
+        if (Modernizr.cssanimations) {
+            var waypoints = $('.viewport-anim').waypoint(function(direction) {
+                switch (direction) {
+                    case "down":
+                        $(this).addClass('animationStart animationVisible');
+                        break;
+                    case "up":
+                        $(this).removeClass('animationVisible');
+                        break;
+                }
+            }, {
+                offset: '80%'
+            })
+            var waypoints = $('.viewport-anim').waypoint(function(direction) {
+                switch (direction) {
+                    case "down":
+                        $(this).addClass('animationStart animationVisible');
+                        break;
+                    case "up":
+                        $(this).removeClass('animationVisible');
+                        break;
+                }
+            }, {
+                offset: '80%'
+            })
+        }
+    });
+    //////////////////////////////////////////////////
+    /////////////////////////////////////////////// //
+    //////////////////////////////////////////////////
+    </script>
+</body>
+
+</html>

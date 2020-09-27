@@ -1,0 +1,82 @@
+body{
+    &.visible{
+        .b-ant {
+            color: #cccccc;
+        }
+    }
+}
+
+.slideUp {
+    background: #cccccc;
+}
+
+$delay : 1.5s;
+.invert{
+    visibility: hidden;
+    -webkit-transition: opacity $delay ease-in;
+    -moz-transition: opacity $delay ease-in;
+    -ms-transition: opacity $delay ease-in;
+    -o-transition: opacity $delay ease-in;
+    transition: opacity $delay ease-in;
+    &.visible {
+        visibility: visible;
+        transition-delay: 0.6s;
+    }
+}
+
+.scrollFadeIn {
+    visibility: visible;
+    // -webkit-transform: scaleY(0);
+    // -ms-transform: scaleY(0);
+    // transform: scaleY(0);
+    // -webkit-transform-origin: center top;
+    // -ms-transform-origin: center top;
+    // transform-origin: center top;
+    opacity: 0;
+
+    -webkit-transition: opacity $delay ease-in;
+    -moz-transition: opacity $delay ease-in;
+    -ms-transition: opacity $delay ease-in;
+    -o-transition: opacity $delay ease-in;
+    transition: opacity $delay ease-in;
+
+    &.visible {
+        visibility: visible;
+        transition-delay: 0.6s;
+        // transition: -webkit-transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        // transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        // transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        // -webkit-transform: scaleY(1);
+        // -ms-transform: scaleY(1);
+        // transform: scaleY(1);
+        // -webkit-transform-origin: center bottom;
+        // -ms-transform-origin: center bottom;
+        // transform-origin: center bottom;
+
+        opacity: 1;
+    }
+}
+
+.scrollSlideUp {
+    visibility: hidden;
+    -webkit-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+    // -webkit-transform-origin: center top;
+    // -ms-transform-origin: center top;
+    // transform-origin: center top;
+
+    &.visible {
+        visibility: visible;
+        transition-delay: 0.6s;
+        transition: -webkit-transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        -webkit-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+        transform: scaleY(1);
+        // -webkit-transform-origin: center bottom;
+        // -ms-transform-origin: center bottom;
+        // transform-origin: center bottom;
+    }
+}

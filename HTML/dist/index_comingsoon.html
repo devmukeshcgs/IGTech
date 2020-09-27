@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="icon" href="images/favicon.ico">
+    <title></title>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Page CSS -->
+    <link href="css/app_ish.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fadeshow-0.1.1.min.css">
+    <!--<script src="js/modernizr.min.js"></script>-->
+</head>
+<style>
+::-webkit-input-placeholder {
+    color: #bbbbbb!important;
+}
+
+:-moz-placeholder {
+    color: #bbbbbb!important;
+    opacity: 1;
+}
+ 
+::-moz-placeholder {
+    color: #bbbbbb!important;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #bbbbbb!important;
+}
+
+::-ms-input-placeholder {
+    color: #bbbbbb!important;
+}
+
+body {
+    background-color: #000;
+    overflow: hidden;
+    color: #ffffff;
+    font-weight: 300 !important;
+    font-style: normal!important;
+}
+
+#slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#comingsoon {
+    opacity: 0.5;
+}
+
+.comingsoon-logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+.input-group-addon {
+    font-weight: 300 !important;
+    font-style: normal!important;
+}
+
+.comingsoon-content {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    width: 1024px;
+    margin-left: -512px;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s linear;
+    -moz-transition: opacity 0.5s linear;
+    -ms-transition: opacity 0.5s linear;
+    -o-transition: opacity 0.5s linear;
+    transition: opacity 0.5s linear;
+}
+
+.slideUp {
+    -webkit-transition: opacity 0.5s linear;
+    -moz-transition: opacity 0.5s linear;
+    -ms-transition: opacity 0.5s linear;
+    -o-transition: opacity 0.5s linear;
+    transition: opacity 0.5s linear;
+    opacity: 1;
+}
+
+img {
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+h3,
+h1,
+h4 {
+    font-weight: 300 !important;
+    font-style: normal!important;
+}
+
+.input-group {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.input-group span {
+    cursor: pointer;
+}
+
+.stayintouch input {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+.caption {
+    margin-bottom: 100px;
+    font-size: 60px;
+}
+.form-control {
+    border: 2px solid rgba(204, 204, 204, 0.1);
+}
+.form-control:focus {
+    border-color: rgba(204, 204, 204, 0.1);
+    outline: 0;
+    -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.0), 0 0 0px rgba(102, 175, 233, 0.6) !important;
+    box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.0), 0 0 0px rgba(102, 175, 233, 0.6)!important;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group input {
+    position: absolute;
+    padding-right:129px;
+}
+
+.form-group button {
+    right: 0px;
+    top:0px;
+    padding-left: 35px;
+    padding-right: 35px;
+    position: absolute;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 768px) {
+    /*.comingsoon-content {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        width: 600px;
+        height: 500px;
+        margin-left: -300px;
+        margin-top: -250px;
+    }*/
+}
+
+@media only screen and (max-width: 1024px) {
+    .comingsoon-content {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        width: 800px;
+        /*  height: 800px; */
+        margin-left: -450px;
+        /*margin-top: -400px;*/
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .comingsoon-logo img {
+        height: 50px;
+    }
+    .comingsoon-content {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        width: 600px;
+        /*height: 500px;*/
+        margin-left: -300px;
+        /*margin-top: -250px;*/
+    }
+    .comingsoon-text {
+        font-size: 20px !important;
+    }
+    .caption {
+        margin-bottom: 25px;
+        font-size: 40px!important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .comingsoon-content {
+        /*left: 0%;
+        top: 25%;*/
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .comingsoon-content {
+        position: absolute;
+        z-index: 2;
+        bottom: 0%;
+        left: 50%;
+        text-align: center;
+        width: 400px;
+        /*height: 500px;*/
+        margin-left: -200px;
+        /*margin-top: -250px;*/
+    }
+
+    .comingsoon-text {
+        font-size: 20px !important;
+    }
+    .caption {
+        margin-bottom: 25px;
+        font-size: 40px!important;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .comingsoon-logo img {
+        height: 50px;
+    }
+    .comingsoon-content {
+        position: absolute;
+        z-index: 2;
+        bottom: 0%;
+        left: 50%;
+        text-align: center;
+        width: 300px;
+        /*height: 100%;*/
+        margin-left: -150px;
+        /*margin-top: 50px;*/
+    }
+
+    .comingsoon-text {
+        font-size: 15px !important;
+    }
+    .caption {
+        margin-bottom: 25px;
+        font-size: 30px!important;
+    }
+}
+.sub-line{
+    margin-bottom:30px;
+    font-size: 17px;
+}
+.input-group .form-control {
+    margin-bottom: 5px;
+}
+#email-error{
+font-weight: normal;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
+    text-align: left;
+    display: block;
+    top: 45px;
+font-size:13px;
+}
+</style>
+<script>
+window.onload = function(e) {
+    var loader = document.getElementById('se-pre-con');
+    loader.className += "hideLoader";
+}
+</script>
+
+<body>
+    <div id="slider"></div>
+    <div id="se-pre-con"><span></span></div>
+    <div class="comingsoon-logo">
+        <img src="images/comingsoon-logo.png" alt="" />
+    </div>
+    <div class="comingsoon-content">
+        <h3 class="text-center comingsoon-text">COMING SOON</h3>
+        <h1 class="text-center caption">Hospitality education. Reimagined.</h1>
+        <h4 class="text-centr sub-line">For admissions queries, please enter your email address below and a member of our admissions team will get in touch with you</h4>
+        <div>
+            <!--<p class="text-center">Please enter your email address below to be notified of our launch</p>-->
+        </div>
+        <form action="get_emails.php" id="SubscribeForm" method="post" class="stayintouch">
+            <div class="form-group">
+                <input name="email" type="email" placeholder="E-mail address" type="text" class="form-control" required>
+                <button class="btn btn-default">Submit</button>
+                <div class="clearfix"></div>
+            </div> 
+            <!-- <div class="input-group">
+                <input name="email" type="email" placeholder="Email..." type="text" class="form-control">
+                <span class="input-group-addon">
+                    <span class="">Submit</span>
+                </span>
+            </div> -->
+        </form>
+    </div>
+    <div class="">
+        <div id="comingsoon" class="slider-pro ">
+            <!-- <div class="bxslider">
+                <div class="">
+                    <img class="" src="images/rereconceptviewsish/1.jpg" />
+                </div>
+                <div class="">
+                    <img class="" src="images/rereconceptviewsish/2.jpg" />
+                </div>
+                <div class="">
+                    <img class="" src="images/rereconceptviewsish/3.jpg" />
+                </div>
+                <div class="">
+                    <img class="" src="images/rereconceptviewsish/4.jpg" />
+                </div>
+                <div class="">
+                    <img class="" src="images/rereconceptviewsish/5.jpg" />
+                </div>
+                <div class="">
+                    <img class="" src="images/rereconceptviewsish/12.jpg" />
+                </div>
+                <div class="">
+                    <img class="" src="images/rereconceptviewsish/53.jpg" />
+                </div>
+                <div class="">
+                    <img class="" src="images/rereconceptviewsish/54.jpg" />
+                </div>
+                <div class="">
+                    <img class="" src="images/rereconceptviewsish/55.jpg" />
+                </div>
+                <div class="">
+                    <img class="" src="images/rereconceptviewsish/58.jpg" />
+                </div>
+                <div class="">
+                    <img class="" src="images/rereconceptviewsish/59.jpg" />
+                </div>
+                <div class="">
+                    <img class="" src="images/rereconceptviewsish/60.jpg" />
+                </div>
+            </div> -->
+            <!-- <div class="sp-slides">
+                <div class="sp-slide">
+                    <img class="sp-image" src="css/images/blank.gif" data-src="images/rereconceptviewsish/1.jpg" data-retina="images/rereconceptviewsish/1.jpg" />
+                </div>
+                <div class="sp-slide">
+                    <img class="sp-image" src="css/images/blank.gif" data-src="images/rereconceptviewsish/2.jpg" data-retina="images/rereconceptviewsish/2.jpg" />
+                </div>
+                <div class="sp-slide">
+                    <img class="sp-image" src="css/images/blank.gif" data-src="images/rereconceptviewsish/3.jpg" data-retina="images/rereconceptviewsish/3.jpg" />
+                </div>
+                <div class="sp-slide">
+                    <img class="sp-image" src="css/images/blank.gif" data-src="images/rereconceptviewsish/4.jpg" data-retina="images/rereconceptviewsish/4.jpg" />
+                </div>
+                <div class="sp-slide">
+                    <img class="sp-image" src="css/images/blank.gif" data-src="images/rereconceptviewsish/5.jpg" data-retina="images/rereconceptviewsish/5.jpg" />
+                </div>
+                <div class="sp-slide">
+                    <img class="sp-image" src="css/images/blank.gif" data-src="images/rereconceptviewsish/12.jpg" data-retina="images/rereconceptviewsish/12.jpg" />
+                </div>
+                <div class="sp-slide">
+                    <img class="sp-image" src="css/images/blank.gif" data-src="images/rereconceptviewsish/53.jpg" data-retina="images/rereconceptviewsish/53.jpg" />
+                </div>
+                <div class="sp-slide">
+                    <img class="sp-image" src="css/images/blank.gif" data-src="images/rereconceptviewsish/54.jpg" data-retina="images/rereconceptviewsish/54.jpg" />
+                </div>
+                <div class="sp-slide">
+                    <img class="sp-image" src="css/images/blank.gif" data-src="images/rereconceptviewsish/55.jpg" data-retina="images/rereconceptviewsish/55.jpg" />
+                </div>
+                <div class="sp-slide">
+                    <img class="sp-image" src="css/images/blank.gif" data-src="images/rereconceptviewsish/58.jpg" data-retina="images/rereconceptviewsish/58.jpg" />
+                </div>
+                <div class="sp-slide">
+                    <img class="sp-image" src="css/images/blank.gif" data-src="images/rereconceptviewsish/59.jpg" data-retina="images/rereconceptviewsish/59.jpg" />
+                </div>
+                <div class="sp-slide">
+                    <img class="sp-image" src="css/images/blank.gif" data-src="images/rereconceptviewsish/60.jpg" data-retina="images/rereconceptviewsish/60.jpg" />
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <!-- SCRIPTS -->
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <script src="js/app_ish.min.js"></script>
+    <script src="js/jquery.fadeshow-0.1.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+    <script>
+    $(document).ready(function() {
+        $("#SubscribeForm").validate({
+ rules: {
+                        "email" : {
+                            required : true
+                        }
+                    },
+                    messages: {
+                        "email": {
+                            required: "Please enter valid Email address."
+                        } 
+                    }});
+
+        // var WW = $(window).width();
+        // var WH = $(window).height();
+        // $('#comingsoon').sliderPro({
+        //     width: WW,
+        //     height: WH,
+        //     arrows: false,
+        //     buttons: false,
+        //     fade: true,
+        //     slideAnimationDuration: 200,
+        //     touchSwipe: false,
+        //     waitForLayers: true,
+        //     autoplay: true,
+        //     autoScaleLayers: false,
+        //     imageScaleMode: 'cover',
+        //     slideDistance: 0,
+        // });
+
+        /*$('.bxslider').bxSlider({
+            mode: 'fade',
+        });*/
+        window.onorientationchange = function() {
+            window.location.reload();
+        }
+        setTimeout(function() {
+            //$('.comingsoon-content').animate({opacity:1}); 
+            $('.comingsoon-content').addClass('slideUp');
+            var comingsoonW = $('.comingsoon-content').outerWidth() / 2;
+            var comingsoonH = $('.comingsoon-content').outerHeight() / 2;
+            if ($(window).width() < 768) {
+                $('.comingsoon-content').css({ marginLeft: -comingsoonW });
+                $('.comingsoon-content').css({ marginTop: -comingsoonH });
+            } else {
+                $('.comingsoon-content').css({ marginLeft: -comingsoonW });
+                $('.comingsoon-content').css({ marginTop: -comingsoonH });
+            }
+        }, 2000);
+        var fadeShow = $("#slider").fadeShow({
+            correctRatio: true,
+            shuffle: true,
+            speed: 4000,
+            images: ['images/rereconceptviewsish/1.jpg',
+                'images/rereconceptviewsish/2.jpg',
+                'images/rereconceptviewsish/3.jpg',
+                'images/rereconceptviewsish/4.jpg',
+                'images/rereconceptviewsish/5.jpg',
+                'images/rereconceptviewsish/12.jpg',
+                'images/rereconceptviewsish/53.jpg',
+                'images/rereconceptviewsish/54.jpg',
+                'images/rereconceptviewsish/55.jpg',
+                'images/rereconceptviewsish/58.jpg',
+                'images/rereconceptviewsish/59.jpg',
+                'images/rereconceptviewsish/60.jpg',
+
+            ]
+        });
+    })
+    </script>
+</body>
+
+</html>

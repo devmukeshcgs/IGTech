@@ -1,0 +1,32 @@
+header {
+    // background: $clr-root;
+    background: transparent;
+    position: fixed;
+    z-index: 20;
+    color: $clr-root;
+    // font-family: 'Old Standard TT', serif;
+    width: 100%;
+    ul.search-btn{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        li{
+            a {
+                padding: 1.5rem;
+                background: #ffffff;
+                svg{
+                    position: relative;
+                    z-index: 2;
+                    width: 2.125rem;
+                    height: 2.125rem;
+                    transition: fill 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
+                    fill: #3a3a3a;
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: 769px) {
+        // display: none;
+    }
+
+}

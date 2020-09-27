@@ -1,0 +1,62 @@
+$base-font: 16px;
+
+.u-case {
+    text-transform: uppercase;
+}
+
+.l-case {
+    text-transform: lowercase;
+}
+
+.s-case {
+    text-transform: initial;
+}
+.name-txt{
+    font-family: 'Old Standard TT', serif;
+}
+.hash {
+    span {
+        display: inline;
+        font-size: 1rem;
+        color: $clr-primary;
+        font-weight: $font-ex-bold;
+    }
+
+    font-weight: $font-ex-bold;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 5rem;
+    line-height: normal;
+    font-weight: $font-thin;
+    color: $clr-base;
+}
+
+h2 {
+    font-size: 4rem;
+    line-height: normal;
+    font-weight: $font-thin;
+    color: $clr-base;
+}
+
+h3 {
+    font-size: 4rem;
+    line-height: normal;
+    font-weight: $font-thin;
+    color: $clr-base;
+}
+
+h4 {
+    font-size: 3rem;
+    line-height: normal;
+    font-weight: $font-thin;
+    color: $clr-base;
+}
+
+h5 {
+    font-size: 2rem;
+    line-height: normal;
+    font-weight: $font-thin;
+    color: $clr-base;
+}

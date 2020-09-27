@@ -1,0 +1,19 @@
+body {
+    &.overflow {
+        overflow: hidden;
+    }
+}
+
+.container {
+    max-width: 1366px;
+    margin: 0px auto;
+
+    @media only screen and (max-width: 420px) {
+        // max-width:400px;
+    }
+}
+
+::selection {
+    background: $clr-primary;
+    color: #ffffff;
+}

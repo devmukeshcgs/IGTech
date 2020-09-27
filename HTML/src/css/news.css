@@ -1,0 +1,103 @@
+.news-media {
+    position: relative;
+    overflow: hidden;
+}
+
+.news-media:hover .social-icons {
+    top: 0px;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.news-media .social-icons {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 5px;
+    position: absolute;
+    right: 0px;
+    top: -60px;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.news-media .social-icons a {
+    opacity: 1;
+}
+.bottom-social{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.news-media .social-icons a:hover {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    opacity: 0.8
+}
+
+.news-heading {
+    color: #7c7c7c;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.news-heading:hover {
+    color: #1d5a9d;
+}
+
+.news-item {
+    margin-bottom: 45px;
+}
+.bottom-next-prev{
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+@media only screen and (max-width: 425px) {
+    .news-item {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .news-heading {
+        font-size: 14px;
+        font-weight: normal;
+    }
+    .news-item {
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .news-item {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .news-heading {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .news-item {
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .news-item {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .news-heading {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .news-item {
+        margin-bottom: 15px;
+    }
+}

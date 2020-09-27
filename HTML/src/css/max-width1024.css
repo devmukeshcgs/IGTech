@@ -1,0 +1,133 @@
+@media only screen and (min-width: 1024px) {
+    #bs-nav {
+        margin-top: 18px !important;
+    } 
+    .logo1, .logo2{
+            height: 73px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #bs-nav {
+    margin-top: 26px !important;
+    }
+
+    #bs-example-navbar-collapse-1 .sub-links {
+        display: none;
+    }
+    .logo-bg>a>img {
+        padding-top: 6px;
+        height: 88px;
+    }
+    .sub-links a img {
+        margin-left: 5px; 
+    }
+    .compact-nav .collapse .sub-links {
+        padding: 13px 5px;
+    }
+    .trangle-right {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0px 14px 398px 124px;
+        border-color: transparent transparent #1a92c0 transparent;
+        position: absolute;
+        z-index: 999;
+        height: 100%;
+        margin-left: 77%;
+    }
+    .white-box {
+        height: 194px;
+    }
+    .experien-img {
+        min-height: 400px;
+        margin-left: -16px;
+    }
+    .rectangle-img {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .sign-up-img {
+        min-height: 398px;
+        background-size: cover;
+    }
+    .trangel-left {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 400px 132px 0px 0px;
+        border-color: #64bbe9 transparent transparent transparent;
+        position: absolute;
+        z-index: 999;
+        height: 100%;
+    }
+    .white-box {
+        position: absolute;
+        margin-left: 16%;
+        background-color: #fff;
+        height: 185px;
+        width: 64%;
+        margin-top: -100px;
+        padding: 15px;
+    }
+    .event-top-space {
+        margin-top: 39px;
+    }
+    .media:first-child {
+        margin-top: 38px;
+    }
+    .experien-img {
+        margin-left: 0px;
+        background-size: cover;
+    }
+    .drkblue-bg {
+        width: 100%;
+        height: auto;
+        padding-top: 15px;
+    }
+    .lightkblue-bg {
+        width: 100%;
+        height: auto;
+        padding-top: 15px;
+    }
+    .list-inline>li {
+        display: block;
+        padding-left: 0px;
+        padding-right: 5px;
+    }
+    .page-heading h1 span:before {
+        right: 99%;
+    }
+    .sec-1,
+    .sec-2 {
+        margin-top: 50px;
+    }
+    .sec-1,
+    .sec-2,
+    .sec-3,
+    .sec-full-1 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #second {
+        margin-bottom: 50px;
+    }
+    .related-links {
+        margin-bottom: 30px;
+    }
+    #fourth .full-sec-body {
+        padding: 3% 3%
+    }
+    .full-sec-body h2 {
+        font-size: 35px;
+    }
+    .full-sec-body p {
+        font-size: 18px;
+    }
+    .link-box>div {
+        padding: 10px;
+    }
+    .link-box>div .link {
+        padding: 10px;
+    }
+}

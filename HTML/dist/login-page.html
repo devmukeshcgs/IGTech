@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="author" content="">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="icon" href="images/favicon.png">
+    <title>Login Page</title>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Page CSS -->
+    <link href="css/app_ish.min.css" rel="stylesheet">
+    <script src="js/modernizr.min.js"></script>
+    <script src="js/modernizr-custom.js"></script>
+</head>
+<style>
+.login-container {
+    width: 100%;
+    display: table;
+    height: calc(100% + 0px);
+    position: absolute;
+}
+
+.welcome {
+    width: 50%;
+    display: table-cell;
+    background-image: url(images/homepage-slider.jpg);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    vertical-align: middle;
+}
+
+.log-form {
+    width: 50%;
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.form-control {
+    padding: 0px 0px;
+}
+
+.log-btn {
+    float: left;
+    margin-top: 15px;
+}
+
+.logo {
+    text-align: left;
+    padding: 0px 0px 0px 50px;
+    position: absolute;
+    top: 0px;
+}
+
+.main-form {
+    width: 300px;
+    margin: 0px auto;
+}
+
+.btn-error {
+    float: right;
+    margin-top: 22px;
+    color: #757575;
+    font-size: 13px;
+}
+
+.btn-error a {
+    color: #757575;
+}
+
+.head {
+    color: #7c7c7c;
+    margin: 0px 0 30px;
+    font-weight: 400;
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.btm-link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0px 10px 5px;
+}
+
+.link-footer {
+    text-align: right;
+    padding: 0 25px;
+}
+
+.wel-txt {
+    background-color: rgba(255, 255, 255, 0.22);
+    height: auto;
+
+    padding: 5px;
+    padding: 5px 80px 15px 80px;
+}
+
+.white-txt {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+
+.small-txt {
+    color: #fff;
+    font-size: 15px;
+    margin-top: -9px;
+    margin-bottom: 30px;
+}
+
+.para {
+    color: #fff;
+}
+
+a small {
+    color: #afafaf;
+}
+
+.copyright small {
+    color: #afafaf;
+}
+
+.register-btn {
+    padding-top: 50px;
+    padding-left: 80px;
+}
+
+.ish-logo {
+    width: 175px;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .welcome {
+        display: none;
+    }
+
+    .login-container {
+        background-image: url(images/homepage-slider.jpg);
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        vertical-align: middle;
+        width: 100%;
+        display: table;
+        height: calc(100% + 0px);
+        position: absolute;
+        padding: 165px;
+    }
+    .log-form {
+        width: 100%;
+        display: inline-block;
+        height: 90%;
+        vertical-align: top;
+        background-color: #fff;
+    }
+    .logo {
+        text-align: left;
+        padding: 0px 0px 15px 15px;
+        position: relative;
+        top: 0px;
+        border-bottom: 1px solid #ccc;
+    }
+    .head {
+        color: #7c7c7c;
+        margin: 35px 0 30px;
+        font-weight: 400;
+        font-size: 26px;
+        font-weight: 300;
+    }
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    .login-container {
+        background-image: url(images/homepage-slider.jpg);
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        vertical-align: middle;
+        width: 100%;
+        display: table;
+        height: calc(100% + 0px);
+        position: absolute;
+        padding: 100px 15px 70px 15px;
+    }
+    .main-form {
+        width: 300px;
+        margin: 0px auto;
+    }
+    .link-footer {
+        text-align: center;
+        padding: 0 25px;
+    }
+    .copyright {
+        text-align: center;
+    }
+    .logo {
+        text-align: left;
+        padding: 0px 0px 15px 15px;
+        position: relative;
+        top: 0px;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .login-container {
+        background-image: url(images/homepage-slider.jpg);
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        vertical-align: middle;
+        width: 100%;
+        display: table;
+        height: calc(100% + 0px);
+        position: absolute;
+        padding: 100px 15px 70px 15px;
+    }
+    .main-form {
+        width: 250px;
+        margin: 0px auto;
+    }
+    .head {
+        color: #7c7c7c;
+        margin: 25px 0 25px;
+        font-weight: 400;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .logo {
+        text-align: left;
+        padding: 0px 0px 10px 15px;
+        position: relative;
+        top: 0px;
+        border-bottom: 1px solid #ccc;
+    }
+    .copyright {
+        text-align: center;
+    }
+    .link-footer {
+        text-align: center;
+        padding: 0 25px;
+    }
+    .btn-error {
+        float: right;
+        margin-top: 22px;
+        color: #757575;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 480px) {
+    .login-container {
+        padding: 50px;
+    }
+    .log-form {
+        height: auto;
+        padding-bottom: 15px;
+    }
+}
+</style>
+
+<body>
+    <div class="login-container">
+        <div class="welcome">
+            <div class="wel-txt">
+                <div class="white-inner">
+                    <h2 class="white-txt">Welcome</h2>
+                    <p class="small-txt">To the ISH portal</p>
+                    <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+            <div class="register-btn">
+                <button type="button" class="btn btn-small btn-info">Register</button>
+            </div>
+        </div>
+        <div class="log-form">
+            <div class="logo">
+                <img src="images/ish-logo.png" class="ish-logo ">
+            </div>
+            <form class="main-form">
+                <h4 class="head">Log in to your account</h4>
+                <div class="form-group">
+                    <input name="youremail" maxlength="50" type="text" onkeypress="trimSpace()" class="form-control" placeholder="Your email">
+                </div>
+                <div class="form-group">
+                    <input name="password" maxlength="50" type="password" onkeypress="trimSpace()" class="form-control" placeholder="Password">
+                </div>
+                <div class="log-btn">
+                    <button type="button" class="btn btn-small btn-info">Log in</button>
+                </div>
+                <div class="btn-error"><a href="#">Forgot password</a></div>
+            </form>
+            <div class="btm-link">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="link-footer">
+                            <a href="terms-of-use.html">
+                                <small>TERMS OF USE</small>
+                            </a>&nbsp;&nbsp;
+                            <a href="privacy-policy.html">
+                                <small>PRIVACY POLICY</small>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <small>©2017 SCHOOL OF HOSPITALITY INDIA PVT LTD,</small>
+                        <small class="">ALL RIGHTS RESERVED.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,503 @@
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 425px) {
+    #bs-nav{
+        margin: 3% !important;
+    }
+    .slider-pro p.sp-layer {
+        max-width: 300px!important;
+        text-align: center;
+    }
+    /***navigation***/
+    #bs-example-navbar-collapse-1 .sub-links {
+        display: none;
+    }
+
+    .heder-bg {
+        background-color: #fff;
+        /*background: #1e599f;
+              background: rgba(30, 89, 159, 0.8);*/
+    }
+    .mob-heder-bg {
+        background: transparent;
+    }
+
+    .ish-collapse {
+        /*background: rgba(30, 89, 159, .8);*/
+    }
+    .logo-bg>a>img {
+        /*height: 58px;*/
+    }
+    .ish-dropdown-menu {
+        max-width: 100%;
+        min-width: 100%;
+    }
+    .navbar-toggle {
+        margin-right: 0px;
+        padding: 13px 10px;
+    }
+
+    .news-thumb {
+        /* padding-left: 50px;
+            padding-right: 50px;*/
+    }
+    .sub-header {
+        display: none;
+    }
+    .navbar-brand {
+        padding: 5px;
+    }
+    .navbar-brand img {
+        width: 150px;
+    }
+    .navbar {
+        /*background: rgba(255, 255, 255, 0.8);*/
+        margin-bottom: 0px;
+    }
+
+    .rmd-pd {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .white-box {
+        position: absolute;
+        margin-left: 10%;
+        background-color: #fff;
+        height: 150px;
+        width: 80%;
+        margin-top: -85px;
+        padding: 15px;
+    }
+    .rectangle-img2 {
+        margin-top: 32px;
+        margin-bottom: 110px;
+    }
+    .rectangle-img {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .rectangle {
+        margin-top: 113px;
+    }
+    .box-head {
+        font-size: 15px;
+    }
+    .box-body {
+        font-size: 12px;
+    }
+    .media:first-child {
+        margin-bottom: 20px;
+    }
+    .readbtn-event {
+        text-align: center;
+    }
+    .trangle-right {
+        display: none;
+    }
+    .experien-img {
+        margin-left: 0px;
+        background-size: cover;
+    }
+    .read-button {
+        font-size: 11px;
+    }
+    .exp-head {
+        padding: 15px;
+    }
+    .exp-body {
+        padding: 15px;
+        color: #fff;
+        margin-bottom: 48px;
+    }
+    .exp {
+        background-color: transparent;
+    }
+    .trangel-left {
+        display: none;
+    }
+    .sign-up-img {
+        margin-right: 0px;
+        background-size: cover;
+    }
+    .trangleright-bg {
+        position: absolute;
+        margin-top: -400px;
+        background-color: rgba(46, 146, 192, 0.7);
+        height: 400px;
+    }
+    .sign-up {
+        background-color: transparent;
+    }
+    .signup-head {
+        padding: 15px;
+    }
+    .slider-pro p.sp-layer {
+        font-size: 22px !important;
+        padding: 10px;
+        word-wrap: break-word;
+        white-space: initial !important;
+    }
+
+    .news-container {
+        padding-top: 25px;
+        padding-bottom: 50px;
+        background: #ffffff;
+    }
+    .news-thumb {
+        margin-bottom: 20px;
+    }
+    .signup-body {
+        color: #fff;
+        margin-bottom: 17px;
+        padding: 15px;
+    }
+    .action {
+        padding: 15px;
+    }
+    .trangleleft-bg {
+        background-color: #64bbe9;
+        position: absolute;
+        margin-top: 1px;
+        z-index: 999;
+        background-color: rgba(100, 187, 233, 0.7);
+        height: 398px;
+    }
+    .event-top-space {
+        margin-top: 7px;
+    }
+    .media-heading {
+        margin-bottom: 0px!important;
+    }
+    .event-date {
+        font-size: 35px;
+        text-align: center;
+        color: #fff;
+    }
+    .event-box {
+        background-color: #1e599f;
+        width: 75px;
+    }
+    .drkblue-bg {
+        width: 100%;
+        height: auto;
+        padding-top: 0px;
+    }
+    .lightkblue-bg {
+        width: 100%;
+        height: auto;
+        padding-top: 5px;
+    }
+    .footer-icon {
+        margin-top: 10%;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .footer-icon a {
+        margin: 0px 5px;
+    }
+    .isize {
+        width: 40px;
+    }
+
+    .list-inline>li {
+        display: block;
+        padding-left: 0px;
+        padding-right: 5px;
+    }
+    .sec-1,
+    .sec-2,
+    .sec-3,
+    .sec-full-1 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    #second {
+        margin-bottom: 50px;
+    }
+    #second .full-sec-body {
+        background: rgba(30, 89, 159, 0.8)!important
+    }
+    #fourth .full-sec-body {
+        text-align: right;
+    }
+ /****** RELATED LINK *******/
+ 
+ .related-links,
+    .related-links.home {
+        /*max-height: 400px;*/
+        overflow: visible;
+        margin-bottom: 150px!important;
+    }
+
+    .related-links .details {
+        padding: 10px;
+        background: #ffffff;
+        display: inline-block;
+        position: absolute !important;
+        margin-bottom: -10%!important;
+        line-height: normal;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-bottom: 10px!important;
+        bottom: -75px;
+    }
+
+    /******* RELATED LINK  *******/
+
+    .page-heading h1 {
+        font-size: 20px;
+        margin: 0px;
+    }
+    .page-heading {
+        padding: 10px 0px 0px 0px;
+    }
+    .page-section-heading {
+        margin: 25px 0 15px;
+        font-size: 18px!important;
+        font-weight: 400;
+        padding-left: 0px;
+    }
+    .page-heading h1 span:before {
+        right: 99%;
+    }
+    .top {
+        margin-top: 12px;
+    }
+    .gallery_item .gallery_inner .hover_gallery .gallery_content .gallery_content_inner {
+        position: absolute;
+        bottom: 6px;
+        width: 100%;
+        left: 0px;
+        padding-left: 5px;
+        padding-right: 5px;
+        line-height: 1.5;
+        font-size: 16px;
+    }
+    .study {
+        margin-top: 0px;
+    }
+    .founder-img {
+        margin-top: 15px;
+        margin-right: 20px;
+    }
+    .bg-box p {
+
+        font-size: 24px;
+        font-weight: 300;
+        width: auto;
+        height: auto;
+    }
+    .overview {
+        /* margin-top: 40px;*/
+    }
+    .link-box>div {
+        min-height: 100px; 
+    }
+    .text-wrap {
+        float: left;
+        margin: 0 5px 5px;
+    }
+    .related-links.location .location-detail {
+
+        margin-left: 5%;
+
+        margin-right: 5%;
+    }
+    .banners-img {
+
+        height: 190px;
+        background-position: center;
+    }
+    .related-links.banner .banner-detail {
+
+        margin-left: 5%;
+
+        margin-right: 5%;
+    }
+    .accom-left .accom-detail-left h4 {
+
+        font-size: 20px;
+    }
+    .accom-left .accom-detail-left {
+
+        margin-left: 5%;
+        z-index: 999;
+        margin-right: 5%;
+    }
+    .accom-right .accom-detail-right {
+
+        margin-left: 5%;
+        z-index: 999;
+        margin-right: 5%;
+    }
+    .accom-right .accom-detail-right h4 {
+
+        font-size: 20px;
+    }
+    .accom-img1 {
+        background-position: center;
+    }
+    .accom-img2 {
+        background-position: center;
+    }
+    .accom-img3 {
+        background-position: center;
+    }
+    .accom-img4 {
+        background-position: center;
+    }
+    .accom-left {
+        margin-top: 30px;
+    }
+    .accom-right {
+        margin-top: 30px;
+    }
+    .vatika-india-next {
+        background-position: center;
+    }
+    .art-n-culture {
+        background-position: center;
+    }
+    .shopping-n-retail {
+        background-position: center;
+    }
+    .food-n-dining {
+
+        background-position: center;
+    }
+    .img-detail {
+        font-size: 14px;
+    }
+    .fees-table {
+        background-image: none;
+    }
+    /* .stripe {
+        background-color: #ebebeb;
+    } */
+    .table-head {
+        font-size: 14px;
+    }
+    .text-wrap-right {
+        margin-left: 0px;
+    }
+
+    .tbl-row {
+        display: table;
+    }
+    .tbl-cell {
+        display: block;
+    }
+    .adv-board {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .adv-board.item-first {
+        margin-top: 0px;
+    }
+    .adv-board-img {
+        width: 100%;
+    }
+
+    .adv-board-details {
+        left: 0px;
+    }
+
+    body {
+        font-family: "roboto", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+    }
+    .ish-bullets li {
+
+        background-position: 0 15px;
+    }
+    .para-body {
+        /*text-align: justify;*/
+        padding: 0 5px;
+    }
+    .page-heading h1 {
+        text-align: left!important;
+    }
+    .page-heading h1 span {
+        text-align: left!important;
+    }
+    .page-heading {
+        padding: 10px 0 25px 0;
+    }
+
+    .page-heading h1 {
+        font-size: 20px;
+        margin: 0;
+        font-size: 22px!important;
+    }
+
+
+    .footer-list {
+        padding: 0;
+        margin-top: 0px!important;
+    }
+    .body-txt {
+        font-size: 17px!important;
+        font-weight: 600px;
+        margin-top: 25px;
+    }
+
+    .founder-img {
+        margin-top: 15px;
+        margin-right: 10px;
+    }
+    .text-wrap {
+        float: left;
+        margin: 0 5px 10px;
+    }
+    .scrollup {
+        width: 30px;
+        height: 30px;
+        bottom: 25px;
+        right: 25px;
+        line-height: 25px;
+    }
+    a.scrollup>i {
+        color: #fff!important;
+        padding: 6px 0;
+    }
+    .small-ic1 {
+        margin-top: 0px;
+        text-align: -webkit-center;
+    }
+    .small-ic {
+        text-align: -webkit-center;
+
+        height: auto;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .icon-heading {
+        text-align: center;
+    }
+    .content-top {
+        margin-top: 25px;
+    }
+    .accom-left .accom-detail-left {
+        padding: 15px 15px 15px 25px;
+    }
+    .tab-top {
+        margin-top: -5px;
+    }
+    .block2>div {
+        margin: 10px 0px 0px 0px;
+    }
+    .btn-larger {
+        padding: 10px;
+    }
+    .location-places {
+        /*font-size: 20px;*/
+    }
+    .location-places-container {
+    margin-bottom: 0px;
+}
+            
+}
+.banner-heading h4 a{
+    margin-right:15px;
+    display:block;
+}

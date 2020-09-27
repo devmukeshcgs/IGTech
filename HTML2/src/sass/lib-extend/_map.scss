@@ -1,0 +1,31 @@
+.si-content-wrapper{
+    padding: 0;
+    
+}
+.si-pointer-bg-right{
+    border-right-color: $clr-default;
+}
+.si-has-border .si-content-wrapper{
+    border: none;
+}
+.si-content{
+    .cm-info-wrap{
+        .leftside{
+            .cm-icon{
+                position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: -23px;
+    font-size: 40px;
+    color: #fff;
+            }
+            &:before{
+                z-index: 0;
+            }
+        }
+    }
+}
+
+
+    

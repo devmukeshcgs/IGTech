@@ -1,0 +1,113 @@
+section {
+    height: 70vh;
+    width: 100vw;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.d-grid {
+    display: grid;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+.intro-sec{
+    // height: 100vh;
+    // align-content: center;
+    // justify-content: center;
+    // text-align: center;
+}
+// h1 {
+//     overflow: hidden;
+//     position: relative;
+//     text-transform: uppercase;
+//     font-size: 100px;
+//     height: 110px;
+//     margin: 0px;
+//     font-weight: 600;
+//     .hidden-text {
+//         display: block;
+//         position: absolute;
+//         z-index: 200;
+//     }
+// }
+
+
+
+
+
+.grid-12 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: 1/span 12;
+}
+
+.project-info {
+    background: #ffffff;
+    padding: 20px;
+    z-index: 22;
+    -webkit-box-shadow: 7px 7px 14px rgba(0, 0, 0, 0.12);
+    box-shadow: 7px 7px 14px rgba(0, 0, 0, 0.12);
+}
+
+.project-left .box {
+    grid-column: 3/span 6;
+    grid-row: 1/span 3;
+    width: 100%;
+
+    @media only screen and (max-width: 420px) {
+        grid-column: 1/span 12;
+    }
+}
+
+.project-left .project-info {
+    grid-column: 2/span 4;
+    grid-row: 2/span 1;
+
+    @media only screen and (max-width: 420px) {
+        grid-column: 1/11;
+        grid-row: 3/span 2;
+    }
+}
+
+.project-right .box {
+    grid-column: 5/span 6;
+    grid-row: 1/span 3;
+    width: 100%;
+
+    @media only screen and (max-width: 420px) {
+        grid-column: 1/span 12;
+    }
+}
+
+.project-right .project-info {
+    grid-column: 8/span 4;
+    grid-row: 2/span 1;
+
+    @media only screen and (max-width: 420px) {
+        grid-column: -1/3;
+        grid-row: 3/span 2;
+    }
+}
+
+.box {
+    position: relative;
+    overflow: hidden;
+    backface-visibility: hidden;
+}
+
+.overlay {
+    display: block;
+    left: 0;
+    top: 0;
+    background: #ffffff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+}
