@@ -1,0 +1,17 @@
+@font-face {
+    font-family: Gordita;
+    src: url('gordita-regular-webfont.woff');
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Gordita;
+    src: url('gordita-medium-webfont.woff');
+    font-weight: 500
+}
+
+@font-face {
+    font-family: Gordita;
+    src: url('gordita-bold-webfont.woff');
+    font-weight: 700
+}

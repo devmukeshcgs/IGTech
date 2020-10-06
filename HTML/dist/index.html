@@ -4,581 +4,273 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta name="viewport" content="width=device-width, user-scalable=no" />
-    <!-- <meta content="width=device-width,initial-scale=1" name="viewport"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="images/favicon.png">
-    <title>Indian School of Hospitality</title>
-    <style>
-        #se-pre-con {
-            display: block;
-            position: fixed;
-            left: 0px;
-            top: 0px;
-            width: 100%;
-            height: 100%;
-            z-index: 999999;
-            background: url(./../images/carLoader.gif) center no-repeat #fff;
-            background-color: rgba(0, 0, 0, 0.8);
-            -webkit-transition: all 0.5s ease-out;
-            -moz-transition: all 0.5s ease-out;
-            -o-transition: all 0.5s ease-out;
-            transition: all 0.5s ease-out;
-        }
+    <link rel="icon" href="images/favicon.ico">
+    <title>IG Tech</title>
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
-        #se-pre-con span {
-            z-index: 9999999;
-            display: block;
-            position: absolute;
-            top: 50%;
-            right: 50%;
-            border: 6px solid #f3f3f3;
-            /* Light grey */
-            border-top: 6px solid #3498db;
-            /* Blue */
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            margin-left: -25px;
-            margin-right: -25px;
-            animation: spin 2s linear infinite;
-        }
-
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        .hideLoader {
-            -webkit-transition: all 1s linear ease-out-in;
-            -moz-transition: all 1s linear ease-out-in;
-            -o-transition: all 1s linear ease-out-in;
-            transition: all 1s linear ease-out-in;
-            top: -100% !important;
-            opacity: 0;
-            display: none;
-        }
-    </style>
-    <script>
-        window.document.onload = function (e) {
-            console.log("document.onload");
-        }
-        window.onload = function (e) {
-            var loader = document.getElementById('se-pre-con');
-            loader.className += "hideLoader";
-        }
-    </script>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Page CSS -->
-    <link href="css/app_ish.min.css" rel="stylesheet">
-    <!--<script src="js/modernizr.min.js"></script>-->
-    <script src="js/modernizr.min.js"></script>
-    <script src="js/modernizr-custom.js"></script>
 </head>
 
-<body id="first">
-    <div id="se-pre-con"><span></span></div>
-    <!-- navigation include in external file -->
-    <div id="inc-navigation">
+<body role="document">
+    <div class="o-loader">
+        <div class="o-loader_line"></div>
     </div>
-    <!-- Docs page layout -->
-    <!-- <div id="owl-slider">
-        <div class="banner-tag-line">Hospitality education. Reimagined.</div>
-        <div id="homepageSlider" class="owl-carousel owl-theme">
-            <div class="item"><img class="owl-lazy" data-src="images/homepage-slider.jpg"></div>
-            <div class="item"><img class="owl-lazy" data-src="images/homepage-slider2.jpg"></div>
-            <div class="item"><img class="owl-lazy" data-src="images/homepage-slider3.jpg"></div>
-        </div>
-    </div> -->
-    <div id="homeslider" class="slider-pro ">
-        <div class="banner-tag-line">
-            Hospitality education. Reimagined. <br>
-            <!-- <div style="font-weight:300; padding:10px 0px;">Applications open on Xth of October</div> -->
-        </div>
-        <div class="sp-slides">
-            <div class="sp-slide">
-                <img class="sp-image" src="css/images/spinner-35x35.gif" data-src="images/homepage-slider.jpg" data-retina="images/homepage-slider.jpg"
-                />
-                <!-- <p class="sp-layer sp-black sp-padding hide-small-screen" data-position="centerCenter" data-vertical="50" data-show-transition="left" data-show-delay="700" data-hide-transition="right" data-hide-delay="200">Hospitality education. Reimagined.
-                </p> -->
-            </div>
-            <div class="sp-slide">
-                <img class="sp-image" src="css/images/spinner-35x35.gif" data-src="images/homepage-slider2.jpg" data-retina="images/homepage-slider2.jpg"
-                />
-                <!-- <p class="sp-layer sp-black sp-padding hide-small-screen" data-position="centerCenter" data-vertical="50" data-show-transition="left" data-show-delay="700" data-hide-transition="right" data-hide-delay="200">Hospitality education. Reimagined.
-                </p> -->
-            </div>
-            <div class="sp-slide">
-                <img class="sp-image" src="css/images/spinner-35x35.gif" data-src="images/homepage-slider3.jpg" data-retina="images/homepage-slider3.jpg"
-                />
-                <!-- <p class="sp-layer sp-black sp-padding hide-small-screen" data-position="centerCenter" data-vertical="50" data-show-transition="left" data-show-delay="700" data-hide-transition="right" data-hide-delay="200">Hospitality education. Reimagined.
-                </p> -->
-            </div>
-        </div>
-    </div>
-    </div>
-    <div class="container for-mob">
-        <div class="row ">
-            <div class="col-md-12">
-                <!-- <h4 class="page-section-heading">Hospitality education. Reimagined.</h4> 
-                <p class="para-body">The essence of hospitality isn’t something that can be distilled to fit within the pages of a textbook- it’s
-                    an entire world that is waiting to be explored and experienced. Our curriculum, a collaboration with
-                    the top ranked hotel management school worldwide, École hôtelière de Lausanne, is tailor-made to help
-                    you discover both the art and science of hospitality, and equip you with a skillset that embraces the
-                    excitement and challenges of change.</p>-->
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row sec-1" id="mgs-1">
-            <div class="col-md-4 col-sm-4">
-                <div class="related-links home ">
-                    <div class="thumb-img">
-                        <img src="images/let-get-acquainted.jpg" class="img-responsive" />
-                    </div>
-                    <div class="details">
-                        <h4>LET'S GET ACQUAINTED</h4>
-                        <p>At ISH, we’re doing things a little differently. Find out more about our unique approach to education
-                            and why you’ll love studying with us.</p>
-                        <a href="about-ish.html" class="readmore-btn">READ MORE</a> </div>
+    <header data-module="header" class="">
+        <div class="container" style="position: relative">
+            <div class="close-menu">
+                <div id="logo"><span class="b-ant">IG Tech</span></div>
+                <div id="menu-btn">
+                    <!-- <button class="menu-button header-main__button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="more-dots">
+                        <div class="more-dot dot1"></div>
+                        <div class="more-dot"></div>
+                        <div class="more-dot dot3"></div>
+                    </div> -->
+                    <div id="threeLines" class=" "><button id="el"></button></div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-4">
-                <div class="related-links home">
-                    <div class="thumb-img">
-                        <img src="images/our-programmes.jpg" class="img-responsive" />
-                    </div>
-                    <div class="details right">
-                        <h4>OUR PROGRAMMES</h4>
-                        <p>We know it’s time for change- which is why we’ve taken a totally new approach to learning. Our programmes
-                            are here to make you, and your skill set, futureproof.</p>
-                        <a href="hospitality-management-programme.html" class="readmore-btn">READ MORE</a> </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-4">
-                <div class="related-links home ">
-                    <div class="thumb-img">
-                        <img src="images/why-study-hospitality.jpg" class="img-responsive" />
-                    </div>
-                    <div class="details">
-                        <h4>WHY STUDY HOSPITALITY?</h4>
-                        <p>An education in hospitality can open up a world of professional possibilities. Find out why millions
-                            are choosing to study hospitality.</p>
-                        <a href="why-hospitality.html" class="readmore-btn">READ MORE</a> </div>
-                </div>
-            </div>
+            <nav class="main-nav">
+                <div class="logo"><img src="./images/logo.png"/> </div>
+                <ul>
+                    <li><a href="#nav-about">Home</a></li>
+                    <li><a href="#nav-about">About Us</a></li>
+                    <li><a href="#nav-awards">Services</a></li>
+                    <!-- <li class="nav-logo"><a href=""> <span class="b-ant">IG Tech</span></a></li> -->
+                    <li><a href="#nav-works">Pricing</a></li>
+                    <li><a href="">Free Trile</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
-    <div class="viewport-anim" id="second">
-        <div class="full-sec">
-            <div id="parallax1" class="parallaxParent full-sec-img">
-                <span class="trangel"></span>
-                <div class="" style="background-image: url(images/experience.jpg); background-size:cover; background-repeat: no-repeat;"></div>
-            </div>
-            <div class="full-sec-body">
-                <div class="">
-                    <h2>Experience hospitality education the way it was meant to be taught</h2>
-                    <p>We want our students to learn from the best. Which is why all of our faculty industry professionals who
-                        love what they do, and want to teach you everything they know.</p>
+    </header>
+    <!-- HERO -->
+    <div class="hero">
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide hero1">
+                    <div class="slide">
+                        <h3>
+                            Stop<span> screening</span> 1000s of resumes. <br>Stop<span> calling</span> 100s of candidates
+                        </h3>
+                    </div>
                 </div>
-                <div class="responsive-action"><a href="meet-the-dean.html" class="readmore-btn">Find out more</a></div>
-            </div>
-        </div>
-    </div>
-    <div class="container viewport-anim" id="third">
-        <div class="row sec-2">
-            <div class="col-md-4 col-sm-4">
-                <div class="related-links home">
-                    <div class="thumb-img">
-                        <img src="images/our-location.jpg" class="img-responsive" />
+                <div class="swiper-slide hero1">
+                    <div class="slide">
+                        <h3>Reduce your bottomline outgoing on recruiters by more than
+                            <span>50% Genarate more business</span> </h3>
                     </div>
-                    <div class="details">
-                        <h4>OUR LOCATION</h4>
-                        <p>Welcome to the Millennium City! Discover the wonders Gurgaon and the entire NCR has to offer you
-                            during your studies.
-                        </p>
-                        <a href="our-location.html" class="readmore-btn">READ MORE</a> </div>
                 </div>
-            </div>
-            <div class="col-md-4 col-sm-4">
-                <div class="related-links home ">
-                    <div class="thumb-img">
-                        <img src="images/our-facilities.jpg" class="img-responsive" />
-                    </div>
-                    <div class="details right">
-                        <h4>OUR FACILITIES</h4>
-                        <p>We’ve put together cutting edge and unique facilities to give you an exceptional experience throughout
-                            your education.
-                        </p>
-                        <a href="facilities.html" class="readmore-btn">READ MORE</a> </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-4">
-                <div class="related-links home">
-                    <div class="thumb-img">
-                        <img src="images/how-to-apply.jpg" class="img-responsive" />
-                    </div>
-                    <div class="details">
-                        <h4>HOW TO APPLY</h4>
-                        <p>Our complete guide will give you all the information you need to apply to ISH with step by step instructions
-                            for complete ease of use.
-                        </p>
-                        <a href="how-to-apply.html" class="readmore-btn">READ MORE</a> </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="viewport-anim" id="fourth">
-        <div class="full-sec">
-            <div class="full-sec-body">
-                <div class="">
-                    <h2>Sign up for an open day and discover our campus, our team, and our vision for yourself</h2>
-                    <p>We’d love to get to know you better- sign up for an open day and tour our facilities, explore our campus,
-                        meet the faculty and see why ISH could be a good fit for your future.</p>
-                </div>
-                <div class="responsive-action"><a href="open-days.html" class="readmore-btn">Find out more</a></div>
-            </div>
-            <div id="parallax2" class="parallaxParent full-sec-img">
-                <span class="trangel"></span>
-                <div class="" style="background-image: url(images/sign-up.jpg); background-size:cover; background-repeat: no-repeat;"></div>
-            </div>
-        </div>
-    </div>
-    <!-- <div class="full-sec" id="">
-      <div id="parallax2" class="parallaxParent full-sec-img2">
-        <span class="trangel2"></span>
-        <div class="" style="background-image: url(images/sign-up.jpg); background-size:cover; background-repeat: no-repeat;"></div>
-      </div>
-      <div class="full-sec-body2">
-        <div class="">
-          <h2>Sign up for an open day and discover our campus for yourself</h2>
-          <p>We’d love to get to know you better- sign up for an open day and tour our facilities, explore our campus, meet the faculty and see why ISH could be a good fit for your future.</p>
-        </div>
-        <div class="responsive-action"><a href="" class="readmore-btn">READ MORE</a></div>
-      </div>
-    </div> -->
-    <div class="container news-container viewport-anim" id="fifth">
-        <div class="row">
-            <div class="col-md-4 col-sm-4 news-head">
-                <h4><a href="#">News and events</a></h4>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="owl-carousel">
-                    <div class="">
-                        <div class="news-thumb">
-                            <img class="img-responsive" src="images/01_homenews.jpg" alt="">
-                            <a href="http://www.thehindubusinessline.com/specials/creating-leaders-for-tomorrows-hotels/article9949326.ece" class="news-thumb-detail">
-                                <p>Creating leaders for
-                                    tomorrow’s hotels</p>
-                                <div class="news-thumb-date">
-                                    May 25th
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="">
-                        <div class="news-thumb">
-                            <img class="img-responsive" src="images/02_homenews.jpg" alt="">
-                            <a href="https://www.vccircle.com/indian-school-of-hospitality-raises-3-8-mn-from-lemon-trees-patu-keswani-others/" class="news-thumb-detail">
-                                <p>Indian School of Hospitality
-                                    raises $3.8 mn from Lemon
-                                    Tree’s Patu Keswani, others
-                                </p>
-                                <div class="news-thumb-date">
-                                    June 1st
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="">
-                        <div class="news-thumb">
-                            <img class="img-responsive" src="images/03_homenews.jpg" alt="">
-                            <a href="http://www.india.com/news/agencies/dilip-puri-to-set-up-indian-school-of-hospitality-2610487/" class="news-thumb-detail">
-                                <p>Dilip Puri to set up Indian
-                                    School of Hospitality</p>
-                                <div class="news-thumb-date">
-                                    June 5th
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="">
-                        <div class="news-thumb">
-                            <img class="img-responsive" src="images/04_homenews.jpg" alt="">
-                            <a href="https://www.dealstreetasia.com/stories/india-school-hospitality-open-appliances-funding-86047/" class="news-thumb-detail">
-                                <p>Indian School of Hospitality
-                                    raises $3.8m from HNIs</p>
-                                <div class="news-thumb-date">
-                                    May 25th
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="">
-                        <div class="news-thumb">
-                            <img class="img-responsive" src="images/05_homenews.jpg" alt="">
-                            <a href="https://www.cntraveller.in/story/indian-school-hospitality-open-delhi-ncr-2018/#s-cust0" class="news-thumb-detail">
-                                <p>Indian school of hospitality to
-                                    open in Delhi NCR in 2018
-                                </p>
-                                <div class="news-thumb-date">
-                                    June 1st
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="">
-                        <div class="news-thumb">
-                            <img class="img-responsive" src="images/06_homenews.jpg" alt="">
-                            <a href="http://nrinews24x7.com/former-starwood-south-asia-md-dilip-puri-unveils-international-hospitality-education-venture/" class="news-thumb-detail">
-                                <p>FORMER STARWOOD SOUTH
-                                    ASIA MD DILIP PURI UNVEILS
-                                    HIS INTERNATIONAL
-                                    HOSPITALITY EDUCATION
-                                    VENTURE</p>
-                                <div class="news-thumb-date">
-                                    June 5th
-                                </div>
-                            </a>
-                        </div>
+                <div class="swiper-slide hero1">
+                    <div class="slide">
+                        <h3>
+                            Our recruiters work <span>full time only for you</span> on your requirements.
+                            we use our own online jobs board seats and logins.
+                        </h3>
                     </div>
                 </div>
             </div>
-        </div> 
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div> -->
+            <!-- <div class="swiper-button-next"></div> -->
+
+        </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <!-- footer include in external file -->
-    <footer class="footer viewport-anim" id="inc-footer">
-    </footer>
-    <!-- Sidebar -->
-    <div id="scroll">
-        <nav id="spy">
-            <ul class="sidebar-nav nav">
-                <li class="sidebar-brand page-scroll"><a href="#first"></a></li>
-                <li class="page-scroll"><a href="#second" data-scroll></a>
+    <!-- CONTENT -->
+    <main class="home">
+
+        <div class="my-container">
+
+            <h4 class="fw5">Welcome to <span>IGTech</span></h4>
+            <p>Offshore Recruitment Process Outsourcing, simply put, is the transfer of onshore recruitment process
+                elements
+                to an offshore service provider. Given today's workforce, almost 95% of the world's most dynamic
+                employees
+                cannot be reached using conventional methods – as an alternative to the "<i>you find us</i>" technique,
+                it's
+                imperative to apply the "we'll find you" system where you can identify a pool of candidates for the
+                right
+                job. For this, however, you need to use the services of a competent Human Resource Outsourcing (HRO)
+                company
+                who will help boost the efficiency and quality of your HR services and contribute to its success. And
+                that's
+                specifically what we at <span>IGTech</span> do for you!</p>
+            <p>Based in Mumbai, India <span>IGTech</span> is the leading provider of Recruitment Process Outsourcing
+                (RPO)
+                services to the International Recruitment Market. Combining speed, competence, flexibility, professional
+                attitude along with lower costs and modern technology, our offshore staffing agents ensure to furnish
+                the
+                ideal contenders for your firm. Resume screening, resume processing, candidate generation, name
+                generation,
+                vacancy monitoring and Internet sourcing are to name just a few from the array of services we proffer.
+                We
+                realize that outsourcing human resources can alter a business's HR department from a cost center to a
+                strategic resource. Our recruiter hiring feature will relieve you from several insignificant tasks and
+                assist you to focus on networking and relationship building to hire more applicants! Furthermore, our
+                hiring
+                recruiters employ the best Internet sources and use their experience to recognize active and passive
+                candidates in order to reduce your time and effort.</p>
+        </div>
+        <section>
+            <div class="my-container">
+                <h4 class="fw5">Benefits</h4>
+                <h5> Offshore Recruitment Process Outsourcing (oRPO) with <span>IGTech</span></h5>
+            </div>
+            <div class="benefits">
+                <div>
+                    <p>You save between 50% to 75% of your total cost as compared to employing an onshore recruiter
+                        or
+                        administrator</p>
+                </div>
+                <div class="benif-img1"></div>
+                <!-- <div></div> -->
+                <!-- <div></div> -->
+                <div>
+                    <p>Your recruiting capabilities increase tremendously without affecting your headcount</p>
+                </div>
+                <div class="benif-img1"></div>
+
+                <div>
+                    <p>Speed of hire and candidate yield perk up</p>
+                </div>
+                <!-- <div></div> -->
+                <div class="benif-img1"></div>
+
+                <div>
+                    <p>Quality of hire improves as your internal recruiting staff have more time to spend with quality
+                        contenders</p>
+                </div>
+                <div class="benif-img1"></div>
+                <div>
+                    <p><span>IGTech</span> proficient Internet Researchers and eRecruiters make use of searching skills
+                        and
+                        staffing tools to find deserving candidates</p>
+                </div>
+            </div>
+        </section>
+        <div class="my-container">
+
+            <p>We achieve our goals in time with zeal, devotion, commitment, responsibility, determination and action.
+                Team
+                up with <span>IGTech</span> to make a noteworthy impact on your bottom line while noticeably
+                increasing
+                your recruiting efficacy. Contact our recruitment support or home staffing agent to know more about us.
+                At
+                <span>IGTech</span>, you can always count on us…</p>
+        </div>
+    </main>
+    <footer id="footer" data-module="footer" class="footer">
+        <!-- SOCIAL -->
+        <div data-module="social" class="social">
+            <ul>
+                <li class="social-item">
+                    <a href="">
+                        <svg class="c-share_icon" role="img">
+                            <use xlink:href="./images/sprite.svg#icon-close"></use>
+                        </svg>
+                    </a>
                 </li>
-                <li class="page-scroll"><a href="#third" data-scroll></a>
+                <li class="social-item">
+                    <a href="">
+                        <svg class="c-share_icon" role="img">
+                            <use xlink:href="./images/sprite.svg#icon-filters"></use>
+                        </svg>
+                    </a>
                 </li>
-                <li class="page-scroll"><a href="#fourth" data-scroll></a>
+                <li class="social-item">
+
+                    <a href="">
+                        <svg class="c-share_icon" role="img">
+                            <use xlink:href="./images/sprite.svg#icon-link"></use>
+                        </svg>
+                    </a>
                 </li>
-                <li class="page-scroll"><a href="#fifth" data-scroll></a>
+                <li class="social-item">
+                    <a href="">
+                        <svg class="c-share_icon" role="img">
+                            <use xlink:href="./images/sprite.svg#icon-play"></use>
+                        </svg>
+                    </a>
                 </li>
+                <li class="social-item">
+                    <a href="">
+                        <svg class="c-share_icon" role="img">
+                            <use xlink:href="./images/sprite.svg#icon-search"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="">
+                        <svg class="c-share_icon" role="img">
+                            <use xlink:href="./images/sprite.svg#info"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="">
+                        <svg class="c-share_icon" role="img">
+                            <use xlink:href="./images/sprite.svg#number-0"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="">
+                        <svg class="c-share_icon" role="img">
+                            <use xlink:href="./images/sprite.svg#social-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="">
+                        <svg class="c-share_icon" role="img">
+                            <use xlink:href="./images/sprite.svg#social-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="JavaScript:Void(0);" class="toggle-me">
+                        <svg class="c-share_icon" role="img">
+                            <use xlink:href="./images/sprite.svg#social-email"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="">
+                        <svg class="c-share_icon" role="img">
+                            <use xlink:href="./images/sprite.svg#social-youtube"></use>
+                        </svg>
+                    </a>
+                </li>
+
             </ul>
-        </nav>
-    </div>
-    <!-- <div id="scroll">
-    <a href="#first" class="page-scroll active">&nbsp;</a>
-    <a href="#second" class="page-scroll">&nbsp;</a>
-    <a href="#third" class="page-scroll">&nbsp;</a>
-    <a href="#fourth" class="page-scroll">&nbsp;</a>
-    <a href="#fifth" class="page-scroll">&nbsp;</a>
-  </div> -->
-    <div class="">
-        <a href="#" class="scrollup hvr-bob "><i class="fa fa-angle-up animated bounce" aria-hidden="true"></i></a>
-    </div>
-    <!-- SCRIPTS -->
-    <!-- <script src="js/jquery.min.js"></script> -->
-    <script src="js/app_ish.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+        </div>
+        <div class="contact-me close">
+            <div id="close-footer" class="close-btn">
+                <svg class="c-share_icon" role="img">
+                    <use xlink:href="./images/sprite.svg#icon-close"></use>
+                </svg>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        /*Scroll Spy*/
-        $('body').scrollspy({ target: '#spy', offset: 80 });
-
-        /*Smooth link animation*/
-        $('a[href*=#]:not([href=#])').click(function () {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-        //this function returns an animation using the element that you pass in
-        // function animateOver(element) {
-        //   console.log(element);
-        //   var tl = new TimelineLite();
-        //   tl.to(element, 0.2, {
-        //     marginLeft: 5
-        //   })
-        //   return tl;
-        // }
-        // $(".readmore-btn").hover(over, out);
-        //
-        // function over() {
-        //   //check if this item has an animation
-        //   if (!this.animation) {
-        //     //if not, create one
-        //     this.animation = animateOver(this);
-        //   } else {
-        //     //or else play it
-        //     this.animation.play().timeScale(1);
-        //   }
-        // }
-        //
-        // function out() {
-        //   //reverse animation 4 times normal speed
-        //   this.animation.reverse().timeScale(1);
-        // }
-
-        $('.ish-dropdown').hover(function () {
-            $(this).addClass("active");
-        },
-            function () {
-                $(this).removeClass("active");
-            });
-
-        if ($(window).width() > 768) {
-            // init controller
-            // var controller = new ScrollMagic.Controller({
-            //     globalSceneOptions: {
-            //         triggerHook: "onEnter",
-            //         duration: "200%"
-            //     }
-            // });
-            // // build scenes
-            // new ScrollMagic.Scene({
-            //         triggerElement: "#parallax1"
-            //     })
-            //     .setTween("#parallax1 > div", {
-            //         y: "50%",
-            //         ease: Linear.easeNone
-            //     })
-            //     .addTo(controller);
-            // // build scenes
-            // new ScrollMagic.Scene({
-            //         triggerElement: "#parallax2"
-            //     })
-            //     .setTween("#parallax2 > div", {
-            //         y: "50%",
-            //         ease: Linear.easeNone
-            //     })
-            //     // .addIndicators()
-            //     .addTo(controller);
-
-            // //Section animation
-            // var tweenSec1 = TweenMax.staggerFromTo(".sec-1 .details", 0.5, { x: 80 }, { x: 0, ease: Linear.easeOut }, 0.15);
-            // new ScrollMagic.Scene({
-            //         triggerElement: ".sec-1"
-            //     })
-            //     .setTween(tweenSec1)
-            //     .addTo(controller);
-
-            // var third = TweenMax.staggerFromTo(".sec-2 .details", 0.5, { x: 80 }, { x: 0, ease: Linear.easeOut }, 0.15);
-            // new ScrollMagic.Scene({
-            //         triggerElement: "#third"
-            //     })
-            //     .setTween(third)
-            //     .addTo(controller);
-
-            // var tweenSec3 = TweenMax.staggerFromTo(".sec-3 .details", 0.5, { x: -80 }, { x: 0, ease: Linear.easeOut }, 0.15);
-            // new ScrollMagic.Scene({
-            //         triggerElement: ".sec-3"
-            //     })
-            //     //.setTween(".sec-3", {opacity:0, y:100, delay:1,ease: Linear.easeNone})
-            //     .setTween(tweenSec3)
-            //     .addTo(controller);
-
-
-
-
-        } else {
-
-        }
-
-
-        // var tween = TweenMax.staggerFromTo(" #fourth .full-sec-body2 > div", 0.5, {
-        //   x: 100
-        // }, {
-        //   x: 0,
-        //   ease: Linear.easeOut
-        // }, 0.15);
-        // new ScrollMagic.Scene({
-        //     triggerElement: "#fourth"
-        //   })
-        //   .setTween(tween)
-        //   .addTo(controller);
-
-        //  TweenLite.from('.thumb-img', 1, {opacity:0, x:50,delay:1})
-        //            .to('.thumb-img', 1, {opacity:1, x:50,delay:2});
-        $(function () {
-            $('#header_nav').data('size', 'big');
-
-            if ($(window).width() < 768) { } else { }
-
-
-            // Check if browser supports Css animations
-            if (Modernizr.cssanimations) {
-                var waypoints = $('.viewport-anim').waypoint(function (direction) {
-                    switch (direction) {
-                        case "down":
-                            $(this).addClass('animationStart animationVisible');
-                            break;
-                        case "up":
-                            $(this).removeClass('animationVisible');
-                            break;
-                    }
-                }, {
-                        offset: '80%'
-                    })
-                var waypoints = $('.viewport-anim').waypoint(function (direction) {
-                    switch (direction) {
-                        case "down":
-                            $(this).addClass('animationStart animationVisible');
-                            break;
-                        case "up":
-                            $(this).removeClass('animationVisible');
-                            break;
-                    }
-                }, {
-                        offset: '80%'
-                    })
-            }
-            // HOME PAGE SLIDER
-        });
-
-
-
-    // $('#homepageSlider').owlCarousel({
-    //     smartSpeed: 1000,
-    //     items: 1,
-    //     autoplay: true,
-    //     lazyLoad: true,
-    //     responsive: {
-    //         // breakpoint from 0 up
-    //         0: {},
-    //         // breakpoint from 480 up
-    //         480: {},
-    //         // breakpoint from 768 up
-    //         768: {}
-    //     }
-    // });
-    //
-
+        var mySwiper = new Swiper('.swiper-container')
     </script>
-    <div id="fifth"></div>
+    <script src="./js/script.js"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,29 @@
+.hero{
+    .swiper-container{
+        height: 100vh;
+        .swiper-wrapper{
+            .swiper-slide{
+                .slide{
+                 display: flex;
+                 align-content: center;
+                 align-items: center;
+                 width: 80vw;
+                 margin: 0 auto;
+                 height: 100%;
+                h3{
+                    color: $clr-root;
+                    span{
+                        color: $clr-primary;
+                        font-weight: 900;
+                    }
+                }
+            }
+            }
+        }
+    }
+}
+.hero1{
+    background-image: url("../../images/black.jpg");
+    background-size: cover;
+    background-position: center center;
+}

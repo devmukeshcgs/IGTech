@@ -1,0 +1,146 @@
+//box-shadow
+@mixin box-shadow($left, $top, $radius, $color) {
+    box-shadow: $left $top $radius $color;
+    -webkit-box-shadow: $left $top $radius $color;
+    -moz-box-shadow: $left $top $radius $color;
+}
+
+//transition
+@mixin transition($arg) {
+    transition: $arg;
+    -webkit-transition: $arg;
+    -moz-transition: $arg;
+}
+
+//animation
+@mixin animation($anim-name, $duration, $iteration, $direction) {
+    animation: $anim-name $duration $iteration $direction;
+    -webkit-animation: $anim-name $duration $iteration $direction;
+    -moz-animation: $anim-name $duration $iteration $direction;
+}
+
+// animation keyframe
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+//border-radius
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+}
+
+//input-placeholder 
+@mixin input-placeholder($content) {
+    &.placeholder {
+        color: $content;
+    }
+
+    &:-moz-placeholder {
+        color: $content;
+    }
+
+    &::-moz-placeholder {
+        color: $content;
+    }
+
+    &:-ms-input-placeholder {
+        color: $content;
+    }
+
+    &::-webkit-input-placeholder {
+        color: $content;
+    }
+}
+
+//transition duration
+@mixin transition($duration) {
+    -webkit-transition: $duration;
+    -moz-transform: $duration;
+    -ms-transform: $duration;
+    -o-transition: $duration;
+    transition: $duration;
+}
+
+//transition scale
+@mixin scale($scale) {
+    -webkit-transform: scale($scale);
+    -moz-transform: scale($scale);
+    -ms-transform: scale($scale);
+    -o-transform: scale($scale);
+    transform: scale($scale);
+}
+
+//transform translate
+@mixin translate($translateX, $translateY) {
+    -webkit-transform: translate($translateX, $translateY);
+    -moz-transform: translate($translateX, $translateY);
+    -ms-transform: translate($translateX, $translateY);
+    -o-transform: translate($translateX, $translateY);
+    transform: translate($translateX, $translateY);
+}
+
+//Responsive
+
+@mixin for-phone-only {
+    @media (max-width: 599px) {
+        @content;
+    }
+}
+
+@mixin for-tablet-portrait-up {
+    @media (min-width: 600px) {
+        @content;
+    }
+}
+
+@mixin for-tablet-portait-only {
+    @media (min-width: 600px) and (max-width: 899px) {
+        @content;
+    }
+}
+
+@mixin for-tablet-landscape-up {
+    @media (min-width: 900px) {
+        @content;
+    }
+}
+
+@mixin for-tablet-landscape-only {
+    @media (min-width: 900px) and (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin for-desktop-up {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin for-desktop-only {
+    @media (min-width: 1200px) and (max-width: 1799px) {
+        @content;
+    }
+}
+
+@mixin for-big-desktop-up {
+    @media (min-width: 1800px) {
+        @content;
+    }
+}

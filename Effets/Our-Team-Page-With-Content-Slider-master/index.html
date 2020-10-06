@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Slider | Our Team Page Design</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link rel="stylesheet" href="master.css">
+</head>
+<body>
+
+     <div class="navbar">
+          <div class="logo">
+               <img src="frame.png" alt="">
+          </div>
+          <div class="menu-btn">
+               <img src="menu.png" alt="">
+          </div>
+     </div>
+
+     <div class="bottom">
+          <p>OUR TEAM</p>
+     </div>
+
+     <section class="center slider">
+          <div>
+               <img src="one.jpg" alt="">
+               <h3>JOHN DOE</h3>
+               <p>Executive Manager</p>
+          </div>
+          <div>
+               <img src="one.jpg" alt="">
+               <h3>JOHN DOE</h3>
+               <p>Executive Manager</p>
+          </div>
+          <div>
+               <img src="one.jpg" alt="">
+               <h3>JOHN DOE</h3>
+               <p>Executive Manager</p>
+          </div>
+          <div>
+               <img src="one.jpg" alt="">
+               <h3>JOHN DOE</h3>
+               <p>Executive Manager</p>
+          </div>
+          <div>
+               <img src="one.jpg" alt="">
+               <h3>JOHN DOE</h3>
+               <p>Executive Manager</p>
+          </div>
+          <div>
+               <img src="one.jpg" alt="">
+               <h3>JOHN DOE</h3>
+               <p>Executive Manager</p>
+          </div>
+     </section>
+
+     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+     <script src="./slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
+     <script type="text/javascript">
+
+     $(document).on('ready', function() {
+
+     $(".center").slick({
+
+     dots: false,
+     infinite: false,
+     centerMode: true,
+     slidesToShow: 2,
+     slidesToScroll: 1,
+     arrows: false,
+
+     responsive: [{
+
+     breakpoint: 1024,
+     settings: {
+          slidesToShow: 2,
+          infinite: true
+     }
+
+}, {
+
+     breakpoint: 600,
+     settings: {
+          slidesToShow: 1,
+          dots: true
+     }
+
+}, {
+
+     breakpoint: 300,
+     settings: "unslick" //destroy slick
+
+}]
+
+});
+
+});
+
+     </script>
+</body>
+</html>

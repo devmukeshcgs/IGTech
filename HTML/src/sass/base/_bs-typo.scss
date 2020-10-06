@@ -1,0 +1,104 @@
+$base-font: 16px;
+
+.u-case {
+    text-transform: uppercase;
+}
+
+.l-case {
+    text-transform: lowercase;
+}
+
+.s-case {
+    text-transform: initial;
+}
+
+.name-txt {
+    font-family: 'Old Standard TT', serif;
+}
+hr{
+    margin: 5rem 0;
+}
+.hash {
+    span {
+        display: inline;
+        font-size: 1rem;
+        color: $clr-primary;
+        font-weight: $font-ex-bold;
+    }
+
+    font-weight: $font-ex-bold;
+    font-size: 1rem;
+}
+i{
+    font-style: italic;
+}
+h1 {
+    font-size: 5rem;
+    line-height: normal;
+    font-weight: $font-thin;
+    color: $clr-base;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 4rem;
+    line-height: normal;
+    font-weight: $font-thin;
+    color: $clr-base;
+    margin-bottom: 1rem;
+
+}
+
+h3 {
+    font-size: 3rem;
+    line-height: normal;
+    font-weight: $font-thin;
+    color: $clr-base;
+    margin-bottom: 1rem;
+
+}
+
+h4 {
+    font-size: 2rem;
+    line-height: normal;
+    font-weight: $font-thin;
+    color: $clr-base;
+    margin-bottom: 1rem;
+
+}
+
+h5 {
+    font-size: 1.5rem;
+    line-height: normal;
+    font-weight: $font-thin;
+    color: $clr-base;
+    margin-bottom: 0.5rem;
+
+}
+
+.fwn {
+    font-weight: normal;
+}
+
+.fw1 {
+    font-weight: 100;
+}
+
+.fw2 {
+    font-weight: 200;
+}
+
+.fw3 {
+    font-weight: 300;
+}
+
+.fw4 {
+    font-weight: 400;
+}
+
+.fw5 {
+    font-weight: 500;
+}
+.fw6 {
+    font-weight: 600;
+}

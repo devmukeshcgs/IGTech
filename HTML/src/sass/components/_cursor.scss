@@ -1,0 +1,157 @@
+
+// .dot {
+//     position: fixed;
+//     z-index: 999999;
+//     left: 50%;
+//     top: 50%;
+//     width: 100px;
+//     height: 100px;
+//     opacity: 0;
+//     mix-blend-mode: difference;
+//     pointer-events: none;
+//     // background: #dbdbdb;
+//     // cursor: none;
+
+// }
+
+// .dot.init {
+//     opacity: 1;
+//     -webkit-transition: opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+//     -moz-transition: opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+//     -o-transition: opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+//     transition: opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+// }
+
+// .dot.link circle {
+//     -webkit-transform: scale(2.95);
+//     -moz-transform: scale(2.95);
+//     -ms-transform: scale(2.95);
+//     -o-transform: scale(2.95);
+//     transform: scale(2.95);
+// }
+
+// .dot.down circle {
+//     -webkit-transform: scale(0.7);
+//     -moz-transform: scale(0.7);
+//     -ms-transform: scale(0.7);
+//     -o-transform: scale(0.7);
+//     transform: scale(0.7);
+// }
+
+// .dot.isolate {
+//     opacity: .35;
+// }
+
+// .dot circle {
+//     transform-origin: 50% 50%;
+//     -webkit-transition: transform 250ms ease;
+//     -moz-transition: transform 250ms ease;
+//     -o-transition: transform 250ms ease;
+//     transition: transform 250ms ease;
+// }
+
+// .no-dot {
+//     cursor: auto;
+// }
+
+// .no-dot a, .no-dot .button {
+//     cursor: pointer;
+// }
+
+// .no-dot textarea {
+//     cursor: text;
+// }
+
+// .no-dot .dot {
+//     display: none;
+// }
+
+// .dot-pulse {
+//     z-index: 999999;
+//     mix-blend-mode: difference;
+//     pointer-events: none;
+// }
+
+// .dot-transition {
+//     position: fixed;
+//     z-index: 5;
+// }
+// a{
+//     cursor: none;    
+//     &:hover{
+//         cursor: none;    
+//     }
+// }
+
+
+// // @supports (-ms-ime-align: auto) {
+
+
+// //     .dot.link svg {
+// //         -webkit-transition: transform 250ms ease;
+// //         -moz-transition: transform 250ms ease;
+// //         -o-transition: transform 250ms ease;
+// //         transition: transform 250ms ease;
+// //         -webkit-transform: scale(2.95);
+// //         -moz-transform: scale(2.95);
+// //         -ms-transform: scale(2.95);
+// //         -o-transform: scale(2.95);
+// //         transform: scale(2.95);
+// //     }
+
+// //     .dot.down svg {
+// //         -webkit-transform: scale(0.7);
+// //         -moz-transform: scale(0.7);
+// //         -ms-transform: scale(0.7);
+// //         -o-transform: scale(0.7);
+// //         transform: scale(0.7);
+// //     }
+
+// //     .dot svg {
+// //         -webkit-transition: transform 250ms ease;
+// //         -moz-transition: transform 250ms ease;
+// //         -o-transition: transform 250ms ease;
+// //         transition: transform 250ms ease;
+// //         -webkit-transform: scale(1);
+// //         -moz-transform: scale(1);
+// //         -ms-transform: scale(1);
+// //         -o-transform: scale(1);
+// //         transform: scale(1);
+// //     }
+
+// // }
+// .trail {
+//     position: fixed;
+//     left: 0;
+//     top: 0;
+//     cursor: pointer;
+//     user-select: none;
+//     text-align: center;
+// }
+
+// .hidden {
+//     background: green;
+//     opacity: 0;
+//     position: absolute;
+//     height: 1000%;
+//     width: 10%;
+//     left: 50%;
+//     top: 50%;
+//     transform: translate(-50%, -50%)
+// }
+
+// .draggable {
+//     background: red;
+//     width: 15px;
+//     height: 15px;
+//     border-radius: 100%;
+//     position: absolute;
+//     left: 50%;
+//     top: 50%;
+//     transform: translate(-50%, -50%)
+// }
+
+// .initial {
+//     background: blue;
+//     color: white;
+// }

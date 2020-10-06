@@ -4,10 +4,7 @@ module.exports = function (grunt) {
     // Configurable paths
     var config = {
         src: 'src',
-        dist: 'dist',
-        tomcatjs: 'D:/apache-tomcat-7.0.47/webapps/Mice/resources/js',
-        tomcatcss: 'D:/apache-tomcat-7.0.47/webapps/Mice/resources/css',
-        tomcatimg: 'D:/apache-tomcat-7.0.47/webapps/Mice/resources/images'
+        dist: 'dist'
     };
 
 

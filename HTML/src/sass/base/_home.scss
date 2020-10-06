@@ -1,0 +1,45 @@
+// @include for-phone-only {}
+// @include for-tablet-portait-only {}
+// @include for-tablet-portrait-up {}
+// @include for-tablet-landscape-only {}
+// @include for-tablet-landscape-up {}
+// @include for-desktop-only {}
+// @include for-desktop-up {}
+// @include for-big-desktop-up {}
+
+//HOME
+.home {
+    .benefits {
+        // display: flex;
+        // flex-wrap: wrap;
+        // align-content: center;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+        align-content: center;
+        // align-items: center;
+        height: 100%;
+
+        >div {
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            align-content: center;
+            width: (100vw/5);
+            height: (100vw/5);
+            // background: lemonchiffon;
+            padding: 2rem 3rem;
+            box-sizing: border-box;
+            &.benif-img1 {
+                background-image: url("../../images/black.jpg");
+                background-size: cover;
+                background-position: center center;
+            }
+
+            p {
+                text-align: left;
+            }
+        }
+    }
+}
