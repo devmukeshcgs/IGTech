@@ -2,6 +2,8 @@ html,
 body {
       cursor: url(cursor.png), auto !important;
       font-weight: 400;
+      font-size: 16px;
+      letter-spacing: 1px;
       font-family: 'Poppins', sans-serif;
 }
 
@@ -52,6 +54,11 @@ video {
       font-size: 80px !important;
 }
 
+button:focus {
+      outline: 0px dotted !important;
+      outline: 0px auto -webkit-focus-ring-color !important;
+}
+
 @media(max-width: 900px) {
       .header {
             left: 50%;
@@ -71,11 +78,13 @@ video {
       position: fixed;
       z-index: 5;
       /* background: rgba(15, 15, 15,0.2); */
-      background: rgb(255 255 255 / 70%);
+      /* background: rgb(255 255 255 / 70%); */
+      background-color: rgb(0 0 0 / 20%) !important;
 }
 
 .nav.scrolled {
-      background-color: #161616 !important;
+      /* background-color: #161616 !important; */
+      background-color: rgb(0 0 0 / 70%) !important;
       transition: background-color 500ms linear;
 }
 
@@ -87,6 +96,8 @@ video {
       font-weight: bold;
       text-transform: uppercase;
       font-size: 18px;
+      /* background: rgb(0 0 0  / 70%); */
+
 }
 
 .nav #brand a {
@@ -124,18 +135,30 @@ video {
       font-weight: 500;
       color: #000000;
       transition: all 500ms ease-out;
+      transition: all 500ms ease-out;
+
 }
+
+
+.nav #menu li.active a,
+.nav.scrolled #menu li.active a {
+      color: #0066ff;
+      transition: all 500ms ease-out;
+}
+
 
 .nav #menu li a.active,
 .nav.scrolled #menu li a.active {
       color: #0066ff;
       transition: all 500ms ease-out;
 }
+
 .nav #menu li a.active:hover,
 .nav.scrolled #menu li a.active:hover {
       color: #ffffff;
       transition: all 500ms ease-out;
 }
+
 .nav.scrolled #menu li a {
       color: #cccccc;
       transition: all 500ms ease-out;
@@ -278,7 +301,7 @@ section {
       color: grey;
       text-transform: uppercase;
       letter-spacing: 4px;
-      font-size: 18px;
+      font-size: 2rempx;
 }
 
 .section-subheading {
@@ -287,12 +310,33 @@ section {
 }
 
 .section-info {
-      font-size: 24px;
+      font-size: 1.2rem;
       color: grey;
 }
 
 .more {
       margin: 40px 0;
+}
+
+.more a {
+      text-decoration: none;
+
+      background: none;
+      border: .3pt solid #0066ff;
+      text-transform: uppercase !important;
+      font-size: 12px !important;
+      letter-spacing: 2px;
+      padding: 18px 36px;
+      /* color: #0066ff !important; */
+      transition: all 0.3s ease-out;
+      color: #505050;
+}
+
+.more a:hover {
+      border: .3pt solid #000000;
+      text-decoration: none;
+      transition: all 0.3s ease-out;
+
 }
 
 button {
@@ -302,7 +346,8 @@ button {
       font-size: 12px !important;
       letter-spacing: 2px;
       padding: 18px 36px;
-      color: #0066ff !important;
+      /* color: #0066ff !important; */
+      color: #505050;
 }
 
 /*--------------- services section starts  --------------- */
@@ -315,16 +360,52 @@ button {
       margin: 30px 0;
 }
 
+.services-list ul li {
+      list-style: none;
+      margin-bottom: 1rem;
+}
+
+.services-list ul li div {
+      display: block;
+      position: relative;
+}
+
+.services-list ul li div.icon {
+      position: absolute;
+}
+
+.services-list ul li div.icon ion-icon {
+      font-size: 1.5rem !important;
+      padding: 0.5rem;
+}
+
+.services-list ul li div.service-name {
+      font-size: 1rem;
+      margin-left: 3rem;
+}
+
 .icon ion-icon {
       font-size: 36px;
       color: #0066ff;
 }
 
 .icon-title {
-      font-size: 20px;
+      font-size: 1.2rem;
       margin-bottom: 4px;
       color: rgb(182, 182, 182);
       font-weight: lighter;
+}
+
+.all-services .section-data .row {
+      padding: 1.5rem 0;
+}
+
+.all-services .section-info h1 {
+      font-size: 1.5rem !important;
+}
+
+.all-services .section-info p {
+      font-size: 1rem !important;
 }
 
 /*--------------- our team section starts  --------------- */
@@ -496,7 +577,7 @@ textarea:focus {
 .footer li,
 p,
 h4 {
-      font-size: 24px !important;
+      font-size: 1.5rem !important;
 }
 
 .footer h4 {
