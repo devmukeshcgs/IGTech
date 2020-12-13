@@ -166,7 +166,7 @@ button:focus {
 
 .nav #menu li a:hover {
       text-decoration: none;
-      color: #0066ff;
+      color: #ffffff;
       transition: all 500ms ease-out;
 }
 
@@ -429,7 +429,7 @@ button {
 }
 
 .team-title h5 {
-      font-size: 28px;
+      font-size: 20px;
 }
 
 .team-title span {
@@ -501,7 +501,7 @@ button {
 
 /*--------------- contact section starts here --------------- */
 
-#contact-form {
+#contact-form, #contactForm {
       margin: 5% 0;
 }
 
@@ -510,24 +510,24 @@ button {
       color: #000;
 }
 
-#contact-form ul {
+#contact-form, #contactForm ul {
       list-style: none;
       margin-bottom: 40px;
       border-radius: 0;
 }
 
-#contact-form li:last-of-type {
+#contact-form, #contactForm li:last-of-type {
       border-bottom: none;
 }
 
-#contact-form label {
+#contact-form, #contactForm label {
       display: block;
-      font-size: 22px;
+      font-size: 14px;
       color: rgb(97, 97, 97);
 }
 
-#contact-form input,
-#contact-form textarea {
+#contact-form, #contactForm input,
+#contact-form, #contactForm textarea {
       width: 100%;
       padding: 5px;
       border: none;
@@ -535,6 +535,7 @@ button {
       background: transparent;
       color: #101010;
       font-weight: bolder;
+      border-bottom: 1px solid #cccccc;
 }
 
 input:focus {
@@ -552,7 +553,7 @@ textarea:focus {
 }
 
 @media(max-width: 900px) {
-      #contact-form {
+      #contact-form, #contactForm {
             margin: 5% 0;
             width: 98%;
       }
@@ -609,4 +610,51 @@ h4 {
       .footer .container {
             width: 92% !important;
       }
+}
+
+.sec-1 {
+      background-image: url(/images/04.png);
+      background-position: center center;
+      background-size: 200px 200px;
+      background-repeat: no-repeat;
+}
+
+.sec-2 {
+      background-image: url(/images/03.png);
+      background-position: center center;
+      background-size: 200px 200px;
+      background-repeat: no-repeat;
+}
+
+.sec-3 {
+      background-image: url(/images/02.png);
+      background-position: center center;
+      background-size: 200px 200px;
+      background-repeat: no-repeat;
+}
+
+.sec-4 {
+      background-image: url(/images/06.png);
+      background-position: center center;
+      background-size: 200px 200px;
+      background-repeat: no-repeat;
+}
+
+.sec-5 {
+      background-image: url(/images/01.png);
+      background-position: center center;
+      background-size: 200px 200px;
+
+      background-repeat: no-repeat;
+}
+
+.sec-6 {
+      background-image: url(/images/05.png);
+      background-position: center center;
+      background-size: 200px 200px;
+      background-repeat: no-repeat;
+}
+
+.help-block.with-errors{
+      color: tomato;
 }

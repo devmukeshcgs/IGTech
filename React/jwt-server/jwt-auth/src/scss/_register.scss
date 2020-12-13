@@ -1,0 +1,48 @@
+.register { float: right;
+    ul {
+        margin: 0px;
+        li {
+            list-style: none;
+            display: inline-block;
+            a {
+                display: inline-block;
+                font-size: 1.1rem;
+                padding: 0rem .5rem;
+                // border: 1px solid $secondary;
+                color: $secondary;
+                margin-right: .5rem;
+                border-radius: 3px;
+                &:hover{
+                color: $dark-gray;
+                }
+            }
+        }
+    }
+
+}
+
+// LOGIN
+
+.Aligner {
+    display: flex;
+    align-items: center;
+    min-height: 24em;
+    justify-content: center;
+  }
+  
+  .Aligner-item {
+    flex: 1;
+  }
+  
+  .Aligner-item--top {
+    align-self: flex-start;
+  }
+  
+  .Aligner-item--bottom {
+    align-self: flex-end;
+  }
+  
+  .Aligner-item--fixed {
+    flex: none;
+    max-width: 50%;
+  }
