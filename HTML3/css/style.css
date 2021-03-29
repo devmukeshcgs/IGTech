@@ -501,7 +501,8 @@ button {
 
 /*--------------- contact section starts here --------------- */
 
-#contact-form, #contactForm {
+#contact-form,
+#contactForm {
       margin: 5% 0;
 }
 
@@ -510,24 +511,29 @@ button {
       color: #000;
 }
 
-#contact-form, #contactForm ul {
+#contact-form,
+#contactForm ul {
       list-style: none;
       margin-bottom: 40px;
       border-radius: 0;
 }
 
-#contact-form, #contactForm li:last-of-type {
+#contact-form,
+#contactForm li:last-of-type {
       border-bottom: none;
 }
 
-#contact-form, #contactForm label {
+#contact-form,
+#contactForm label {
       display: block;
       font-size: 14px;
       color: rgb(97, 97, 97);
 }
 
-#contact-form, #contactForm input,
-#contact-form, #contactForm textarea {
+#contact-form,
+#contactForm input,
+#contact-form,
+#contactForm textarea {
       width: 100%;
       padding: 5px;
       border: none;
@@ -553,7 +559,9 @@ textarea:focus {
 }
 
 @media(max-width: 900px) {
-      #contact-form, #contactForm {
+
+      #contact-form,
+      #contactForm {
             margin: 5% 0;
             width: 98%;
       }
@@ -655,6 +663,39 @@ h4 {
       background-repeat: no-repeat;
 }
 
-.help-block.with-errors{
+.help-block.with-errors {
       color: tomato;
+}
+
+.copyright small {
+      font-size: 1rem;
+}
+
+#address p {
+      padding-left: 25px;
+      text-align: left;
+      font-weight: 500;
+}
+
+#address h4 {
+      position: relative;
+      padding-left: 25px;
+      text-align: left;
+      font-size: 1.2rem !important;
+}
+
+#address h4 ion-icon {
+      position: absolute;
+      top: 3px;
+      left: 0px;
+      color: #0066ff;
+}
+
+#media ul li a {
+      color: #ffffff;
+      font-size: 1.8rem;
+}
+
+#media ul li a:hover {
+      color: #0066ff;
 }
