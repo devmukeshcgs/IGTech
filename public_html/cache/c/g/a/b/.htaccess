@@ -1,0 +1,7 @@
+
+RewriteEngine On
+
+<FilesMatch "index.php">
+    Order allow,deny
+    Allow from all
+</FilesMatch>

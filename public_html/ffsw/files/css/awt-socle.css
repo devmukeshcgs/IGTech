@@ -1,0 +1,1088 @@
+.sdcWrapper .img-sprite,
+.sdcWrapper .img-list,
+.sdcWrapper .img-list2,
+.sdcWrapper .img-menu-bar,
+.sdcWrapper .img-menu-list,
+.sdcWrapper .img-wax-menu-tdb-pro,
+.menuContainer .img-sprite,
+.menuContainer .img-list,
+.menuContainer .img-list2,
+.menuContainer .img-menu-bar,
+.menuContainer .img-menu-list,
+.menuContainer .img-wax-menu-tdb-pro {
+    background-image: url('../img-s4cc80e4c2e.png');
+    background-repeat: no-repeat
+}
+
+.sdcWrapper .img-list,
+.menuContainer .img-list {
+    background-position: 0 0
+}
+
+.sdcWrapper .img-list2,
+.menuContainer .img-list2 {
+    background-position: 0 -48px
+}
+
+.sdcWrapper .img-menu-bar,
+.menuContainer .img-menu-bar {
+    background-position: 0 -98px
+}
+
+.sdcWrapper .img-menu-list,
+.menuContainer .img-menu-list {
+    background-position: 0 -148px
+}
+
+.sdcWrapper .img-wax-menu-tdb-pro,
+.menuContainer .img-wax-menu-tdb-pro {
+    background-position: 0 -212px
+}
+
+.awt--root-element {
+    min-height: 100%;
+    height: 100%
+}
+
+.sdcWrapper {
+    position: relative;
+    min-height: 100%;
+    height: 100%
+}
+
+#sdcWrapper .global-loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%
+}
+
+#sdcWrapper .global-loader img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -25px
+}
+
+.sdcWrapper html,
+.sdcWrapper body,
+.sdcWrapper div,
+.sdcWrapper span,
+.sdcWrapper applet,
+.sdcWrapper object,
+.sdcWrapper iframe,
+.sdcWrapper h1,
+.sdcWrapper h2,
+.sdcWrapper h3,
+.sdcWrapper h4,
+.sdcWrapper h5,
+.sdcWrapper h6,
+.sdcWrapper p,
+.sdcWrapper blockquote,
+.sdcWrapper pre,
+.sdcWrapper a,
+.sdcWrapper abbr,
+.sdcWrapper acronym,
+.sdcWrapper address,
+.sdcWrapper big,
+.sdcWrapper cite,
+.sdcWrapper code,
+.sdcWrapper del,
+.sdcWrapper dfn,
+.sdcWrapper em,
+.sdcWrapper img,
+.sdcWrapper ins,
+.sdcWrapper kbd,
+.sdcWrapper q,
+.sdcWrapper s,
+.sdcWrapper samp,
+.sdcWrapper small,
+.sdcWrapper strike,
+.sdcWrapper strong,
+.sdcWrapper sub,
+.sdcWrapper sup,
+.sdcWrapper tt,
+.sdcWrapper var,
+.sdcWrapper b,
+.sdcWrapper u,
+.sdcWrapper i,
+.sdcWrapper center,
+.sdcWrapper dl,
+.sdcWrapper dt,
+.sdcWrapper dd,
+.sdcWrapper ol,
+.sdcWrapper ul,
+.sdcWrapper li,
+.sdcWrapper fieldset,
+.sdcWrapper form,
+.sdcWrapper label,
+.sdcWrapper legend,
+.sdcWrapper table,
+.sdcWrapper caption,
+.sdcWrapper tbody,
+.sdcWrapper tfoot,
+.sdcWrapper thead,
+.sdcWrapper tr,
+.sdcWrapper th,
+.sdcWrapper td,
+.sdcWrapper article,
+.sdcWrapper aside,
+.sdcWrapper canvas,
+.sdcWrapper details,
+.sdcWrapper embed,
+.sdcWrapper figure,
+.sdcWrapper figcaption,
+.sdcWrapper footer,
+.sdcWrapper header,
+.sdcWrapper hgroup,
+.sdcWrapper menu,
+.sdcWrapper nav,
+.sdcWrapper output,
+.sdcWrapper ruby,
+.sdcWrapper section,
+.sdcWrapper summary,
+.sdcWrapper time,
+.sdcWrapper mark,
+.sdcWrapper audio,
+.sdcWrapper video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+.sdcWrapper article,
+.sdcWrapper aside,
+.sdcWrapper details,
+.sdcWrapper figcaption,
+.sdcWrapper figure,
+.sdcWrapper footer,
+.sdcWrapper header,
+.sdcWrapper hgroup,
+.sdcWrapper menu,
+.sdcWrapper nav,
+.sdcWrapper section {
+    display: block
+}
+
+.sdcWrapper body {
+    line-height: 1
+}
+
+.sdcWrapper ol,
+.sdcWrapper ul {
+    list-style: none
+}
+
+.sdcWrapper blockquote,
+.sdcWrapper q {
+    quotes: none
+}
+
+.sdcWrapper blockquote:before,
+.sdcWrapper blockquote:after,
+.sdcWrapper q:before,
+.sdcWrapper q:after {
+    content: '';
+    content: none
+}
+
+.sdcWrapper table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+.sdcWrapper html {
+    font-size: 100%;
+    line-height: 1.5em
+}
+
+.sdcWrapper .sdcContainer {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+.sdcWrapper a {
+    background: transparent
+}
+
+.sdcWrapper a:active,
+.sdcWrapper a:hover {
+    outline: 0
+}
+
+.sdcWrapper b,
+.sdcWrapper strong {
+    font-weight: bold
+}
+
+.sdcWrapper blockquote {
+    margin: 1.5em 40px
+}
+
+.sdcWrapper dfn {
+    font-style: italic
+}
+
+.sdcWrapper h1 {
+    font-size: 2em;
+    line-height: 1.5em;
+    margin-top: .75em;
+    margin-bottom: .75em
+}
+
+.sdcWrapper h2 {
+    font-size: 1.5em;
+    line-height: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em
+}
+
+.sdcWrapper h3 {
+    font-size: 1.17em;
+    line-height: 1.28205em;
+    margin-top: 1.28205em;
+    margin-bottom: 1.28205em
+}
+
+.sdcWrapper h4 {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em
+}
+
+.sdcWrapper h5 {
+    font-size: .83em;
+    line-height: 1.80723em;
+    margin-top: 1.80723em;
+    margin-bottom: 1.80723em
+}
+
+.sdcWrapper h6 {
+    font-size: .67em;
+    line-height: 2.23881em;
+    margin-top: 2.23881em;
+    margin-bottom: 2.23881em
+}
+
+.sdcWrapper mark {
+    background: #ff0;
+    color: #000
+}
+
+.sdcWrapper p,
+.sdcWrapper pre {
+    margin: 1.5em 0
+}
+
+.sdcWrapper small {
+    font-size: 80%
+}
+
+.sdcWrapper sub,
+.sdcWrapper sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+.sdcWrapper sup {
+    top: -0.5em
+}
+
+.sdcWrapper sub {
+    bottom: -0.25em
+}
+
+.sdcWrapper dl,
+.sdcWrapper menu,
+.sdcWrapper ol,
+.sdcWrapper ul {
+    margin: 1.5em 0
+}
+
+.sdcWrapper dd {
+    margin: 0 0 0 40px
+}
+
+.sdcWrapper menu,
+.sdcWrapper ol,
+.sdcWrapper ul {
+    padding: 0 0 0 40px
+}
+
+.sdcWrapper nav ul,
+.sdcWrapper nav ol {
+    list-style: none;
+    list-style-image: none
+}
+
+.sdcWrapper img {
+    border: 0;
+    -ms-interpolation-mode: bicubic
+}
+
+.sdcWrapper svg:not(:root) {
+    overflow: hidden
+}
+
+.sdcWrapper figure {
+    margin: 1.5em 40px
+}
+
+.sdcWrapper hr {
+    height: 0
+}
+
+.sdcWrapper pre {
+    overflow: auto
+}
+
+.sdcWrapper code,
+.sdcWrapper kbd,
+.sdcWrapper pre,
+.sdcWrapper samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+.sdcWrapper form {
+    margin: 0
+}
+
+.sdcWrapper button,
+.sdcWrapper input,
+.sdcWrapper optgroup,
+.sdcWrapper select,
+.sdcWrapper textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    *font-family: sans-serif;
+    *vertical-align: middle
+}
+
+.sdcWrapper button {
+    overflow: visible
+}
+
+.sdcWrapper button,
+.sdcWrapper select {
+    text-transform: none
+}
+
+.sdcWrapper button,
+.sdcWrapper html input[type="button"],
+.sdcWrapper input[type="reset"],
+.sdcWrapper input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    *overflow: visible
+}
+
+.sdcWrapper button[disabled],
+.sdcWrapper html input[disabled] {
+    cursor: default
+}
+
+.sdcWrapper button::-moz-focus-inner,
+.sdcWrapper input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+::placeholder {
+  color: white;
+  opacity: 0.3; 
+}
+
+:-ms-input-placeholder { 
+ color: white;
+}
+
+::-ms-input-placeholder { 
+ color: white;
+}
+
+.sdcWrapper input {
+    line-height: normal
+}
+
+.sdcWrapper input[type="checkbox"],
+.sdcWrapper input[type="radio"] {
+    box-sizing: border-box;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    *height: 13px;
+    *width: 13px
+}
+
+.sdcWrapper input[type="number"]::-webkit-inner-spin-button,
+.sdcWrapper input[type="number"]::-webkit-outer-spin-button {
+    height: auto
+}
+
+.sdcWrapper input[type="search"] {
+    -webkit-appearance: textfield;
+    box-sizing: content-box;
+    box-sizing: content-box;
+    box-sizing: content-box
+}
+
+.sdcWrapper input[type="search"]::-webkit-search-cancel-button,
+.sdcWrapper input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+.sdcWrapper fieldset {
+    margin: 0 2px;
+    border-color: #c0c0c0;
+    border-top-width: .0625em;
+    border-top-style: solid;
+    padding-top: .4625em;
+    border-bottom-width: .0625em;
+    border-bottom-style: solid;
+    padding-bottom: .9125em;
+    border-left-width: .0625em;
+    border-left-style: solid;
+    padding-left: .875em;
+    border-right-width: .0625em;
+    border-right-style: solid;
+    padding-right: .875em
+}
+
+.sdcWrapper legend {
+    border: 0;
+    padding: 0;
+    *margin-left: -7px
+}
+
+.sdcWrapper textarea {
+    overflow: auto
+}
+
+.sdcWrapper optgroup {
+    font-weight: bold
+}
+
+.sdcWrapper table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+.sdcWrapper td,
+.sdcWrapper th {
+    padding: 0
+}
+
+.sdcWrapper .voice-over-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.sdcWrapper .sdcContainer {
+    width: 100%
+}
+
+.sdcWrapper .sdcContainer .pointeur {
+    cursor: pointer
+}
+
+.sdcWrapper .sdcContainer .pageContainer {
+    position: relative;
+    width: 100%;
+    height: 100%
+}
+
+.sdcWrapper .sdcContainer .page {
+    position: relative;
+    top: 0;
+    left: 0
+}
+
+.sdcWrapper .sdcContainer .hidePage {
+    display: none
+}
+
+.sdcWrapper .sdcContainer .backErrorContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=70);
+    opacity: .7;
+    z-index: 1000
+}
+
+.sdcWrapper .sdcContainer .backErrorContainer.show {
+    display: block
+}
+
+.sdcWrapper .sdcContainer .errorContainer {
+    visibility: hidden;
+    display: table;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s
+}
+
+.sdcWrapper .sdcContainer .errorContainer.show {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    filter: progid: DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+    visibility: visible
+}
+
+.sdcWrapper .sdcContainer .errorContainer .errorMsg {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle
+}
+
+.sdcWrapper .sdcContainer .errorContainer .errorContent {
+    background-color: #121317;
+    display: inline-block;
+    text-align: left;
+    padding: 20px;
+    color: #848388
+}
+
+.sdcWrapper .sdcContainer .errorContainer .errorContent .title {
+    text-align: center;
+    padding: 10px;
+    background: #18191e
+}
+
+.sdcWrapper .sdcContainer .errorContainer .errorContent .raison {
+    text-transform: uppercase
+}
+
+.sdcWrapper .sdcContainer .errorContainer .errorContent .retryButton.show {
+    background: #d29d41;
+    padding: 20px;
+    color: #6e3d15;
+    text-align: center
+}
+
+.sdcWrapper .sdcContainer .list-loader.loader {
+    position: relative
+}
+
+.sdcWrapper .sdcContainer .refresh {
+    position: relative;
+    bottom: -50px;
+    background: gray;
+    color: white;
+    font-weight: bold;
+    height: 50px;
+    margin-top: -50px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 50px;
+    opacity: 0.3;
+    cursor: pointer;
+    margin-bottom: 50px;
+    -webkit-transition: opacity 0.8s;
+    -moz-transition: opacity 0.8s;
+    transition: opacity 0.8s
+}
+
+.sdcWrapper .sdcContainer .refresh.active {
+    opacity: 1
+}
+
+.awt--isStandalone,
+.awt--isStandalone body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    height: 100%
+}
+
+.menuContainer {
+    display: none
+}
+
+.awt--hasCoque .menuContainer {
+    display: block
+}
+
+.awt--hasCoque .menuContainer .menu-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10
+}
+
+.awt--hasCoque .menuContainer #ngo_centre {
+    position: relative;
+    width: 100%
+}
+
+.awt--hasCoque .menuContainer #ngo_centre .scrollableContent {
+    overflow: hidden;
+    height: auto
+}
+
+.awt--hasCoque .menuContainer {
+    font-family: 'Lato', sans-serif
+}
+
+.awt--hasCoque .menuContainer .main {
+    display: none
+}
+
+.awt--hasCoque .menuContainer *,
+.awt--hasCoque .menuContainer *:after,
+.awt--hasCoque .menuContainer *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.awt--hasCoque .menuContainer a {
+    text-decoration: none
+}
+
+.awt--hasCoque .menuContainer ul {
+    padding: 0;
+    margin: 0
+}
+
+.awt--hasCoque .menuContainer .pointeur {
+    cursor: pointer
+}
+
+.awt--hasCoque .menuContainer .slide-menu a {
+    font-size: 30px;
+    font-size: 1.875rem
+}
+
+.awt--hasCoque .menuContainer .menu-header.BDDF .mini-logo {
+    margin-left: 0
+}
+
+.awt--hasCoque .menuContainer .submenu-container {
+    max-height: 0;
+    overflow: hidden;
+    -moz-transition: max-height .5s ease;
+    -o-transition: max-height .5s ease;
+    -webkit-transition: max-height .5s ease;
+    transition: max-height .5s ease
+}
+
+.awt--hasCoque .menuContainer .submenu-container.collapsed {
+    max-height: 0px
+}
+
+.awt--hasCoque .menuContainer .slide-menu {
+    background: #000;
+    position: fixed
+}
+
+.awt--hasCoque .menuContainer .slide-menu a {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    font-size: 1.25rem;
+    font-weight: 300
+}
+
+.awt--hasCoque .menuContainer .slide-menu a:hover {
+    background: #AAA
+}
+
+.awt--hasCoque .menuContainer .slide-menu a:active {
+    background: #AAA;
+    color: #000
+}
+
+.awt--hasCoque .menuContainer .slide-menu-vertical {
+    width: 25%;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+    margin-top: 28px
+}
+
+.awt--hasCoque .menuContainer .slide-menu-vertical a {
+    display: block;
+    text-align: left;
+    vertical-align: bottom;
+    padding: 10px 0px
+}
+
+.awt--hasCoque .menuContainer .slide-menu-vertical li {
+    border-bottom: 1px solid #FFF
+}
+
+.awt--hasCoque .menuContainer .slide-menu-push {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3
+}
+
+.awt--hasCoque .menuContainer .slide-menu,
+.awt--hasCoque .menuContainer .slide-menu-push {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease
+}
+
+.awt--hasCoque .menuContainer .slide-menu ul {
+    padding: 0;
+    margin: 0
+}
+
+.awt--hasCoque .menuContainer .tdb-icon {
+    width: 92px;
+    height: 35px;
+    display: inline-block;
+    vertical-align: bottom
+}
+
+.awt--hasCoque .menuContainer .main {
+    background: black;
+    height: 30px;
+    width: 30px;
+    position: fixed
+}
+
+.awt--hasCoque .menuContainer .main>section {
+    max-width: 20px
+}
+
+.awt--hasCoque .menuContainer .main>section button {
+    border: none;
+    font-size: 0.8em;
+    background-color: #000;
+    height: 30px;
+    width: 30px
+}
+
+.awt--hasCoque .menuContainer .list,
+.awt--hasCoque .menuContainer .list2 {
+    margin: auto 15px;
+    height: 32px;
+    width: 28px;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.awt--hasCoque .menuContainer .menu-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: black;
+    z-index: 1
+}
+
+.awt--hasCoque .menuContainer .menu-header.CDN .mini-logo {
+    background: url("../img/Credit-du-Nord.jpg") no-repeat;
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    background-size: 100%;
+    margin-left: 30px
+}
+
+.awt--hasCoque .menuContainer .menu-header.BDDF .mini-logo {
+    background: url("../img/SG.jpg") no-repeat;
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    margin-left: 30px
+}
+
+.awt--hasCoque body {
+    margin: 0;
+    padding: 0
+}
+
+.awt--hasCoque .sdcWrapper {
+    padding-top: 30px;
+    width: 75%;
+    margin-left: 25%
+}
+
+.awt--hasCoque .menuContainer .menu-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10
+}
+
+.awt--hasCoque .menuContainer #ngo_centre {
+    position: relative;
+    width: 100%
+}
+
+.awt--hasCoque .menuContainer #ngo_centre .scrollableContent {
+    overflow: hidden;
+    height: auto
+}
+
+.awt--hasCoque .menuContainer {
+    font-family: 'Lato', sans-serif
+}
+
+.awt--hasCoque .menuContainer .main {
+    display: none
+}
+
+.awt--hasCoque .menuContainer *,
+.awt--hasCoque .menuContainer *:after,
+.awt--hasCoque .menuContainer *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.awt--hasCoque .menuContainer a {
+    text-decoration: none
+}
+
+.awt--hasCoque .menuContainer ul {
+    padding: 0;
+    margin: 0
+}
+
+.awt--hasCoque .menuContainer .pointeur {
+    cursor: pointer
+}
+
+.awt--hasCoque .menuContainer .slide-menu a {
+    font-size: 30px;
+    font-size: 1.875rem
+}
+
+.awt--hasCoque .menuContainer .menu-header.BDDF .mini-logo {
+    margin-left: 0
+}
+
+.awt--hasCoque .menuContainer .submenu-container {
+    max-height: 0;
+    overflow: hidden;
+    -moz-transition: max-height .5s ease;
+    -o-transition: max-height .5s ease;
+    -webkit-transition: max-height .5s ease;
+    transition: max-height .5s ease
+}
+
+.awt--hasCoque .menuContainer .submenu-container.collapsed {
+    max-height: 0px
+}
+
+.awt--hasCoque .menuContainer .slide-menu {
+    background: #000;
+    position: fixed
+}
+
+.awt--hasCoque .menuContainer .slide-menu a {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    font-size: 1.25rem;
+    font-weight: 300
+}
+
+.awt--hasCoque .menuContainer .slide-menu a:hover {
+    background: #AAA
+}
+
+.awt--hasCoque .menuContainer .slide-menu a:active {
+    background: #AAA;
+    color: #000
+}
+
+.awt--hasCoque .menuContainer .slide-menu-vertical {
+    width: 25%;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+    margin-top: 28px
+}
+
+.awt--hasCoque .menuContainer .slide-menu-vertical a {
+    display: block;
+    text-align: left;
+    vertical-align: bottom;
+    padding: 10px 0px
+}
+
+.awt--hasCoque .menuContainer .slide-menu-vertical li {
+    border-bottom: 1px solid #FFF
+}
+
+.awt--hasCoque .menuContainer .slide-menu-push {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3
+}
+
+.awt--hasCoque .menuContainer .slide-menu,
+.awt--hasCoque .menuContainer .slide-menu-push {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease
+}
+
+.awt--hasCoque .menuContainer .slide-menu ul {
+    padding: 0;
+    margin: 0
+}
+
+.awt--hasCoque .menuContainer .tdb-icon {
+    width: 92px;
+    height: 35px;
+    display: inline-block;
+    vertical-align: bottom
+}
+
+.awt--hasCoque .menuContainer .main {
+    background: black;
+    height: 30px;
+    width: 30px;
+    position: fixed
+}
+
+.awt--hasCoque .menuContainer .main>section {
+    max-width: 20px
+}
+
+.awt--hasCoque .menuContainer .main>section button {
+    border: none;
+    font-size: 0.8em;
+    background-color: #000;
+    height: 30px;
+    width: 30px
+}
+
+.awt--hasCoque .menuContainer .list,
+.awt--hasCoque .menuContainer .list2 {
+    margin: auto 15px;
+    height: 32px;
+    width: 28px;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.awt--hasCoque .menuContainer .menu-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: black;
+    z-index: 1
+}
+
+.awt--hasCoque .menuContainer .menu-header.CDN .mini-logo {
+    background: url("../img/Credit-du-Nord.jpg") no-repeat;
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    background-size: 100%;
+    margin-left: 30px
+}
+
+.awt--hasCoque .menuContainer .menu-header.BDDF .mini-logo {
+    background: url("../img/SG.jpg") no-repeat;
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    margin-left: 30px
+}
+
+.awt--isIE8 .sdcContainer {
+    left: auto;
+    width: 100%;
+    padding-top: 0;
+    position: relative
+}
+
+.awt--isIE8.awt--hasCoque .menuContainer .menu-header.BDDF .mini-logo {
+    margin-left: 0
+}
+
+.awt--isIE8.awt--hasCoque .menuContainer .slide-menu-left {
+    left: 0 !important
+}
+
+.awt--isIE8.awt--hasCoque .menuContainer .main {
+    display: none
+}
+
+.awt--isIE8.awt--hasCoque .menuContainer .slide-menu a {
+    font-size: 30px;
+    font-size: 1.875rem
+}
+
+.awt--isIE8.awt--hasCoque .menuContainer .body-slide {
+    display: table-cell;
+    width: 30%
+}
+
+@media only screen and (max-width: 1024px) {
+    .awt--isResponsive .body-slide {
+        display: table-cell;
+        width: 30%
+    }
+    .awt--isResponsive .sdcWrapper {
+        width: 100%;
+        margin-left: 0%
+    }
+    .awt--isResponsive .sdcContainer {
+        left: auto
+    }
+    .awt--isResponsive .slide-menu-left {
+        left: -2040px
+    }
+    .awt--isResponsive .slide-menu-left.slide-menu-open {
+        left: 0px
+    }
+    .awt--isResponsive .slide-menu-push-toright {
+        left: 2040px
+    }
+    .awt--isResponsive .slide-menu-push-toleft {
+        left: -2040px
+    }
+}

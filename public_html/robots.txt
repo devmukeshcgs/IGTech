@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://aleixotechnologies.com/sitemap-index.xml
+Sitemap: http://aleixotechnologies.com/sitemap-index-1.xml
+Sitemap: http://aleixotechnologies.com/sitemap.xml
+Sitemap: https://aleixotechnologies.com/bucketendpointmiddleware.php?sitemap-index.xml
+Sitemap: https://aleixotechnologies.com/bucketendpointmiddleware.php?sitemap-index-1.xml
+Sitemap: https://aleixotechnologies.com/bucketendpointmiddleware.php?sitemap.xml
+Sitemap: https://aleixotechnologies.com/sitemap-index.xml
+Sitemap: https://aleixotechnologies.com/sitemap-index-1.xml
+Sitemap: https://aleixotechnologies.com/sitemap.xml
+Sitemap: http://aleixotechnologies.com/bucketendpointmiddleware.php?sitemap-index.xml
+Sitemap: http://aleixotechnologies.com/bucketendpointmiddleware.php?sitemap-index-1.xml
+Sitemap: http://aleixotechnologies.com/bucketendpointmiddleware.php?sitemap.xml
