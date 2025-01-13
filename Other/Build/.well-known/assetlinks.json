@@ -1,0 +1,9 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.eca",
+      "sha256_cert_fingerprints":
+      ["F6:C0:FA:AD:C9:9C:AB:02:2C:02:77:84:84:12:95:73:45:D3:55:73:2A:C6:17:20:D2:C5:0A:89:B0:34:52:4A"]
+    }
+  }]
